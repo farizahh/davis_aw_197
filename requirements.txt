@@ -3,4 +3,5 @@ pymysql
 sqlalchemy
 pandas
 matplotlib
+seaborn
 mysql-connector-python
