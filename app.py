@@ -2,6 +2,7 @@ import pymysql
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Membuat koneksi ke database MySQL
 conn = pymysql.connect(
@@ -43,6 +44,12 @@ query_sales = """
     GROUP BY p.EnglishProductName
 """
 
+# Query untuk mengambil data total penjualan
+query_total = """
+    SELECT SalesAmount
+    FROM factinternetsales
+"""
+
 # Eksekusi query untuk mengambil data pelanggan
 cursor.execute(query_cust)
 data_cust = cursor.fetchall()
@@ -55,6 +62,10 @@ data_order = cursor.fetchall()
 cursor.execute(query_sales)
 data_sales = cursor.fetchall()
 
+# Eksekusi query untuk mengambil data total penjualan
+cursor.execute(query_total)
+data_total = cursor.fetchall()
+
 # Menutup cursor dan koneksi database
 cursor.close()
 conn.close()
@@ -63,6 +74,7 @@ conn.close()
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
 df_order = pd.DataFrame(data_order, columns=['CustomerKey', 'TotalOrderQuantity', 'TotalSalesAmount'])
 df_sales = pd.DataFrame(data_sales, columns=['EnglishProductName', 'TotalSales'])
+df_total = pd.DataFrame(data_total, columns =['SalesAmount'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
@@ -76,8 +88,6 @@ plt.title('Total Customer by Gender')
 plt.xlabel('Gender')
 plt.ylabel('Total Customer')
 plt.grid(True)
-
-# Menampilkan plot di Streamlit
 st.pyplot(plt)
 
 # 2. Relationship 
@@ -90,8 +100,6 @@ plt.xlabel('Total Order Quantity')
 plt.ylabel('Total Sales Amount')
 plt.colorbar(label='CustomerKey')  # Menambahkan colorbar untuk menunjukkan keterangan warna
 plt.grid(True)
-
-# Menampilkan plot di Streamlit
 st.pyplot(plt)
 
 # 3. Composition (komposisi)
@@ -103,6 +111,15 @@ plt.title('Distribution of Total Sales')
 plt.xlabel('Total Sales')
 plt.ylabel('Frequency')
 plt.grid(True)
+st.pyplot(plt)
 
-# Menampilkan plot di Streamlit
+# 4. Distribution (distribusi)
+st.subheader('4. Distribution (distribusi)')
+st.dataframe(df_total)
+plt.figure(figsize=(10, 6))
+sns.kdeplot(df_total['SalesAmount'], color='skyblue', fill=True)
+plt.title('Kernel Density Estimation of Sales Amount')
+plt.xlabel('Sales Amount')
+plt.ylabel('Density')
+plt.grid(True)
 st.pyplot(plt)
