@@ -49,9 +49,7 @@ conn.close()
 
 # Membuat DataFrame dari hasil query
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
-# df_order = pd.DataFrame(data_order, columns=['TotalSalesAmount', 'TotalOrderQuantity'])
-st.write("Ini adalah hasil cetak dari kode Anda:")
-st.write(data_order)
+df_order = pd.DataFrame(data_order, columns=['CustomerKey', 'TotalOrderQuantity', 'TotalSalesAmount'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
@@ -69,8 +67,11 @@ plt.grid(True)
 # Menampilkan plot di Streamlit
 st.pyplot(plt)
 
-# #2 Relationship 
-# st.subheader('2. Relationship (hubungan)')
+#2 Relationship 
+st.subheader('2. Relationship (hubungan)')
+# Menampilkan DataFrame di Streamlit
+st.write(df_order)
+
 # st.dataframe(df_order)
 # plt.figure(figsize=(12, 6))
 # plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], alpha=0.5)
