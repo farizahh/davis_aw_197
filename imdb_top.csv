@@ -1,0 +1,251 @@
+web-scraper-order,web-scraper-start-url,judul,rating,tahun,durasi,link,link-href,umur
+1718339113-1,https://www.imdb.com/chart/top/?ref_=nv_mv_250,1. The Shawshank Redemption,8.2 (1.2M),1994,2h 22m,1. The Shawshank Redemption,https://www.imdb.com/title/tt0111161/?ref_=chttp_t_1,R
+1718339113-2,https://www.imdb.com/chart/top/?ref_=nv_mv_250,2. The Godfather,8.2 (133K),1972,2h 55m,2. The Godfather,https://www.imdb.com/title/tt0068646/?ref_=chttp_t_2,R
+1718339113-3,https://www.imdb.com/chart/top/?ref_=nv_mv_250,3. The Dark Knight,8.2 (132K),2008,2h 32m,3. The Dark Knight,https://www.imdb.com/title/tt0468569/?ref_=chttp_t_3,PG-13
+1718339113-4,https://www.imdb.com/chart/top/?ref_=nv_mv_250,4. The Godfather Part II,8.2 (572K),1974,3h 22m,4. The Godfather Part II,https://www.imdb.com/title/tt0071562/?ref_=chttp_t_4,R
+1718339113-5,https://www.imdb.com/chart/top/?ref_=nv_mv_250,5. 12 Angry Men,8.2 (260K),1957,1h 36m,5. 12 Angry Men,https://www.imdb.com/title/tt0050083/?ref_=chttp_t_5,Approved
+1718339113-6,https://www.imdb.com/chart/top/?ref_=nv_mv_250,6. Schindler's List,8.2 (1.1M),1993,3h 15m,6. Schindler's List,https://www.imdb.com/title/tt0108052/?ref_=chttp_t_6,R
+1718339113-7,https://www.imdb.com/chart/top/?ref_=nv_mv_250,7. The Lord of the Rings: The Return of the King,8.2 (816K),2003,3h 21m,7. The Lord of the Rings: The Return of the King,https://www.imdb.com/title/tt0167260/?ref_=chttp_t_7,PG-13
+1718339113-8,https://www.imdb.com/chart/top/?ref_=nv_mv_250,8. Pulp Fiction,8.2 (453K),1994,2h 34m,8. Pulp Fiction,https://www.imdb.com/title/tt0110912/?ref_=chttp_t_8,R
+1718339113-9,https://www.imdb.com/chart/top/?ref_=nv_mv_250,9. The Lord of the Rings: The Fellowship of the Ring,8.2 (181K),2001,2h 58m,9. The Lord of the Rings: The Fellowship of the Ring,https://www.imdb.com/title/tt0120737/?ref_=chttp_t_9,PG-13
+1718339113-10,https://www.imdb.com/chart/top/?ref_=nv_mv_250,"10. The Good, the Bad and the Ugly",8.2 (259K),1966,2h 58m,"10. The Good, the Bad and the Ugly",https://www.imdb.com/title/tt0060196/?ref_=chttp_t_10,R
+1718339113-11,https://www.imdb.com/chart/top/?ref_=nv_mv_250,11. Forrest Gump,8.2 (190K),1994,2h 22m,11. Forrest Gump,https://www.imdb.com/title/tt0109830/?ref_=chttp_t_11,PG-13
+1718339113-12,https://www.imdb.com/chart/top/?ref_=nv_mv_250,12. The Lord of the Rings: The Two Towers,8.2 (336K),2002,2h 59m,12. The Lord of the Rings: The Two Towers,https://www.imdb.com/title/tt0167261/?ref_=chttp_t_12,PG-13
+1718339113-13,https://www.imdb.com/chart/top/?ref_=nv_mv_250,13. Fight Club,8.2 (1.2M),1999,2h 19m,13. Fight Club,https://www.imdb.com/title/tt0137523/?ref_=chttp_t_13,R
+1718339113-14,https://www.imdb.com/chart/top/?ref_=nv_mv_250,14. Inception,8.2 (223K),2010,2h 28m,14. Inception,https://www.imdb.com/title/tt1375666/?ref_=chttp_t_14,PG-13
+1718339113-15,https://www.imdb.com/chart/top/?ref_=nv_mv_250,15. Star Wars: Episode V - The Empire Strikes Back,8.2 (191K),1980,2h 4m,15. Star Wars: Episode V - The Empire Strikes Back,https://www.imdb.com/title/tt0080684/?ref_=chttp_t_15,PG
+1718339113-16,https://www.imdb.com/chart/top/?ref_=nv_mv_250,16. The Matrix,8.2 (887K),1999,2h 16m,16. The Matrix,https://www.imdb.com/title/tt0133093/?ref_=chttp_t_16,R
+1718339113-17,https://www.imdb.com/chart/top/?ref_=nv_mv_250,17. Goodfellas,8.2 (81K),1990,2h 25m,17. Goodfellas,https://www.imdb.com/title/tt0099685/?ref_=chttp_t_17,R
+1718339113-18,https://www.imdb.com/chart/top/?ref_=nv_mv_250,18. One Flew Over the Cuckoo's Nest,8.2 (58K),1975,2h 13m,18. One Flew Over the Cuckoo's Nest,https://www.imdb.com/title/tt0073486/?ref_=chttp_t_18,R
+1718339113-19,https://www.imdb.com/chart/top/?ref_=nv_mv_250,19. Se7en,8.2 (93K),1995,2h 7m,19. Se7en,https://www.imdb.com/title/tt0114369/?ref_=chttp_t_19,R
+1718339113-20,https://www.imdb.com/chart/top/?ref_=nv_mv_250,20. Interstellar,8.2 (95K),2014,2h 49m,20. Interstellar,https://www.imdb.com/title/tt0816692/?ref_=chttp_t_20,PG-13
+1718339113-21,https://www.imdb.com/chart/top/?ref_=nv_mv_250,21. It's a Wonderful Life,8.2 (104K),1946,2h 10m,21. It's a Wonderful Life,https://www.imdb.com/title/tt0038650/?ref_=chttp_t_21,PG
+1718339113-22,https://www.imdb.com/chart/top/?ref_=nv_mv_250,22. Seven Samurai,,1954,3h 27m,22. Seven Samurai,https://www.imdb.com/title/tt0047478/?ref_=chttp_t_22,Not Rated
+1718339113-23,https://www.imdb.com/chart/top/?ref_=nv_mv_250,23. The Silence of the Lambs,,1991,1h 58m,23. The Silence of the Lambs,https://www.imdb.com/title/tt0102926/?ref_=chttp_t_23,R
+1718339113-24,https://www.imdb.com/chart/top/?ref_=nv_mv_250,24. Saving Private Ryan,,1998,2h 49m,24. Saving Private Ryan,https://www.imdb.com/title/tt0120815/?ref_=chttp_t_24,R
+1718339113-25,https://www.imdb.com/chart/top/?ref_=nv_mv_250,25. City of God,,2002,2h 10m,25. City of God,https://www.imdb.com/title/tt0317248/?ref_=chttp_t_25,R
+1718339113-26,https://www.imdb.com/chart/top/?ref_=nv_mv_250,26. Life Is Beautiful,,1997,1h 56m,26. Life Is Beautiful,https://www.imdb.com/title/tt0118799/?ref_=chttp_t_26,PG-13
+1718339113-27,https://www.imdb.com/chart/top/?ref_=nv_mv_250,27. The Green Mile,,1999,3h 9m,27. The Green Mile,https://www.imdb.com/title/tt0120689/?ref_=chttp_t_27,R
+1718339113-28,https://www.imdb.com/chart/top/?ref_=nv_mv_250,28. Terminator 2: Judgment Day,,1991,2h 17m,28. Terminator 2: Judgment Day,https://www.imdb.com/title/tt0103064/?ref_=chttp_t_28,R
+1718339113-29,https://www.imdb.com/chart/top/?ref_=nv_mv_250,29. Star Wars: Episode IV - A New Hope,,1977,2h 1m,29. Star Wars: Episode IV - A New Hope,https://www.imdb.com/title/tt0076759/?ref_=chttp_t_29,PG
+1718339113-30,https://www.imdb.com/chart/top/?ref_=nv_mv_250,30. Dune: Part Two,,2024,2h 46m,30. Dune: Part Two,https://www.imdb.com/title/tt15239678/?ref_=chttp_t_30,PG-13
+1718339113-31,https://www.imdb.com/chart/top/?ref_=nv_mv_250,31. Back to the Future,,1985,1h 56m,31. Back to the Future,https://www.imdb.com/title/tt0088763/?ref_=chttp_t_31,PG
+1718339113-32,https://www.imdb.com/chart/top/?ref_=nv_mv_250,32. Spirited Away,,2001,2h 5m,32. Spirited Away,https://www.imdb.com/title/tt0245429/?ref_=chttp_t_32,PG
+1718339113-33,https://www.imdb.com/chart/top/?ref_=nv_mv_250,33. The Pianist,,2002,2h 30m,33. The Pianist,https://www.imdb.com/title/tt0253474/?ref_=chttp_t_33,R
+1718339113-34,https://www.imdb.com/chart/top/?ref_=nv_mv_250,34. Parasite,,2019,2h 12m,34. Parasite,https://www.imdb.com/title/tt6751668/?ref_=chttp_t_34,R
+1718339113-35,https://www.imdb.com/chart/top/?ref_=nv_mv_250,35. Psycho,,1960,1h 49m,35. Psycho,https://www.imdb.com/title/tt0054215/?ref_=chttp_t_35,R
+1718339113-36,https://www.imdb.com/chart/top/?ref_=nv_mv_250,36. Gladiator,,2000,2h 35m,36. Gladiator,https://www.imdb.com/title/tt0172495/?ref_=chttp_t_36,R
+1718339113-37,https://www.imdb.com/chart/top/?ref_=nv_mv_250,37. Spider-Man: Across the Spider-Verse,,2023,2h 20m,37. Spider-Man: Across the Spider-Verse,https://www.imdb.com/title/tt9362722/?ref_=chttp_t_37,PG
+1718339113-38,https://www.imdb.com/chart/top/?ref_=nv_mv_250,38. The Lion King,,1994,1h 28m,38. The Lion King,https://www.imdb.com/title/tt0110357/?ref_=chttp_t_38,G
+1718339113-39,https://www.imdb.com/chart/top/?ref_=nv_mv_250,39. The Departed,,2006,2h 31m,39. The Departed,https://www.imdb.com/title/tt0407887/?ref_=chttp_t_39,R
+1718339113-40,https://www.imdb.com/chart/top/?ref_=nv_mv_250,40. Léon: The Professional,,1994,1h 50m,40. Léon: The Professional,https://www.imdb.com/title/tt0110413/?ref_=chttp_t_40,R
+1718339113-41,https://www.imdb.com/chart/top/?ref_=nv_mv_250,41. American History X,,1998,1h 59m,41. American History X,https://www.imdb.com/title/tt0120586/?ref_=chttp_t_41,R
+1718339113-42,https://www.imdb.com/chart/top/?ref_=nv_mv_250,42. Whiplash,,2014,1h 46m,42. Whiplash,https://www.imdb.com/title/tt2582802/?ref_=chttp_t_42,R
+1718339113-43,https://www.imdb.com/chart/top/?ref_=nv_mv_250,43. The Prestige,,2006,2h 10m,43. The Prestige,https://www.imdb.com/title/tt0482571/?ref_=chttp_t_43,PG-13
+1718339113-44,https://www.imdb.com/chart/top/?ref_=nv_mv_250,44. Grave of the Fireflies,,1988,1h 29m,44. Grave of the Fireflies,https://www.imdb.com/title/tt0095327/?ref_=chttp_t_44,Not Rated
+1718339113-45,https://www.imdb.com/chart/top/?ref_=nv_mv_250,45. Harakiri,,1962,2h 13m,45. Harakiri,https://www.imdb.com/title/tt0056058/?ref_=chttp_t_45,Not Rated
+1718339113-46,https://www.imdb.com/chart/top/?ref_=nv_mv_250,46. The Usual Suspects,,1995,1h 46m,46. The Usual Suspects,https://www.imdb.com/title/tt0114814/?ref_=chttp_t_46,R
+1718339113-47,https://www.imdb.com/chart/top/?ref_=nv_mv_250,47. Casablanca,,1942,1h 42m,47. Casablanca,https://www.imdb.com/title/tt0034583/?ref_=chttp_t_47,PG
+1718339113-48,https://www.imdb.com/chart/top/?ref_=nv_mv_250,48. The Intouchables,,2011,1h 52m,48. The Intouchables,https://www.imdb.com/title/tt1675434/?ref_=chttp_t_48,R
+1718339113-49,https://www.imdb.com/chart/top/?ref_=nv_mv_250,49. Cinema Paradiso,,1988,2h 54m,49. Cinema Paradiso,https://www.imdb.com/title/tt0095765/?ref_=chttp_t_49,PG
+1718339113-50,https://www.imdb.com/chart/top/?ref_=nv_mv_250,50. Modern Times,,1936,1h 27m,50. Modern Times,https://www.imdb.com/title/tt0027977/?ref_=chttp_t_50,G
+1718339113-51,https://www.imdb.com/chart/top/?ref_=nv_mv_250,51. Rear Window,,1954,1h 52m,51. Rear Window,https://www.imdb.com/title/tt0047396/?ref_=chttp_t_51,PG
+1718339113-52,https://www.imdb.com/chart/top/?ref_=nv_mv_250,52. Once Upon a Time in the West,,1968,2h 46m,52. Once Upon a Time in the West,https://www.imdb.com/title/tt0064116/?ref_=chttp_t_52,PG-13
+1718339113-53,https://www.imdb.com/chart/top/?ref_=nv_mv_250,53. Alien,,1979,1h 57m,53. Alien,https://www.imdb.com/title/tt0078748/?ref_=chttp_t_53,R
+1718339113-54,https://www.imdb.com/chart/top/?ref_=nv_mv_250,54. City Lights,,1931,1h 27m,54. City Lights,https://www.imdb.com/title/tt0021749/?ref_=chttp_t_54,G
+1718339113-55,https://www.imdb.com/chart/top/?ref_=nv_mv_250,55. Django Unchained,,2012,2h 45m,55. Django Unchained,https://www.imdb.com/title/tt1853728/?ref_=chttp_t_55,R
+1718339113-56,https://www.imdb.com/chart/top/?ref_=nv_mv_250,56. Apocalypse Now,,1979,2h 27m,56. Apocalypse Now,https://www.imdb.com/title/tt0078788/?ref_=chttp_t_56,R
+1718339113-57,https://www.imdb.com/chart/top/?ref_=nv_mv_250,57. Memento,,2000,1h 53m,57. Memento,https://www.imdb.com/title/tt0209144/?ref_=chttp_t_57,R
+1718339113-58,https://www.imdb.com/chart/top/?ref_=nv_mv_250,58. WALL·E,,2008,1h 38m,58. WALL·E,https://www.imdb.com/title/tt0910970/?ref_=chttp_t_58,G
+1718339113-59,https://www.imdb.com/chart/top/?ref_=nv_mv_250,59. 12th Fail,,2023,2h 27m,59. 12th Fail,https://www.imdb.com/title/tt23849204/?ref_=chttp_t_59,PG
+1718339113-60,https://www.imdb.com/chart/top/?ref_=nv_mv_250,60. Raiders of the Lost Ark,,1981,1h 55m,60. Raiders of the Lost Ark,https://www.imdb.com/title/tt0082971/?ref_=chttp_t_60,R
+1718339113-61,https://www.imdb.com/chart/top/?ref_=nv_mv_250,61. The Lives of Others,,2006,2h 17m,61. The Lives of Others,https://www.imdb.com/title/tt0405094/?ref_=chttp_t_61,Approved
+1718339113-62,https://www.imdb.com/chart/top/?ref_=nv_mv_250,62. Sunset Boulevard,,1950,1h 50m,62. Sunset Boulevard,https://www.imdb.com/title/tt0043014/?ref_=chttp_t_62,PG-13
+1718339113-63,https://www.imdb.com/chart/top/?ref_=nv_mv_250,63. Avengers: Infinity War,,2018,2h 29m,63. Avengers: Infinity War,https://www.imdb.com/title/tt4154756/?ref_=chttp_t_63,Approved
+1718339113-64,https://www.imdb.com/chart/top/?ref_=nv_mv_250,64. Paths of Glory,,1957,1h 28m,64. Paths of Glory,https://www.imdb.com/title/tt0050825/?ref_=chttp_t_64,PG
+1718339113-65,https://www.imdb.com/chart/top/?ref_=nv_mv_250,65. Spider-Man: Into the Spider-Verse,,2018,1h 57m,65. Spider-Man: Into the Spider-Verse,https://www.imdb.com/title/tt4633694/?ref_=chttp_t_65,Approved
+1718339113-66,https://www.imdb.com/chart/top/?ref_=nv_mv_250,66. Witness for the Prosecution,,1957,1h 56m,66. Witness for the Prosecution,https://www.imdb.com/title/tt0051201/?ref_=chttp_t_66,R
+1718339113-67,https://www.imdb.com/chart/top/?ref_=nv_mv_250,67. The Shining,,1980,2h 26m,67. The Shining,https://www.imdb.com/title/tt0081505/?ref_=chttp_t_67,G
+1718339113-68,https://www.imdb.com/chart/top/?ref_=nv_mv_250,68. The Great Dictator,,1940,2h 5m,68. The Great Dictator,https://www.imdb.com/title/tt0032553/?ref_=chttp_t_68,R
+1718339113-69,https://www.imdb.com/chart/top/?ref_=nv_mv_250,69. Aliens,,1986,2h 17m,69. Aliens,https://www.imdb.com/title/tt0090605/?ref_=chttp_t_69,R
+1718339113-70,https://www.imdb.com/chart/top/?ref_=nv_mv_250,70. Inglourious Basterds,,2009,2h 33m,70. Inglourious Basterds,https://www.imdb.com/title/tt0361748/?ref_=chttp_t_70,PG-13
+1718339113-71,https://www.imdb.com/chart/top/?ref_=nv_mv_250,71. The Dark Knight Rises,,2012,2h 44m,71. The Dark Knight Rises,https://www.imdb.com/title/tt1345836/?ref_=chttp_t_71,PG
+1718339113-72,https://www.imdb.com/chart/top/?ref_=nv_mv_250,72. Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,,1964,1h 35m,72. Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,https://www.imdb.com/title/tt0057012/?ref_=chttp_t_72,PG
+1718339113-73,https://www.imdb.com/chart/top/?ref_=nv_mv_250,73. Coco,,2017,1h 45m,73. Coco,https://www.imdb.com/title/tt2380307/?ref_=chttp_t_73,R
+1718339113-74,https://www.imdb.com/chart/top/?ref_=nv_mv_250,74. Oldboy,,2003,2h,74. Oldboy,https://www.imdb.com/title/tt0364569/?ref_=chttp_t_74,R
+1718339113-75,https://www.imdb.com/chart/top/?ref_=nv_mv_250,75. American Beauty,,1999,2h 2m,75. American Beauty,https://www.imdb.com/title/tt0169547/?ref_=chttp_t_75,PG
+1718339113-76,https://www.imdb.com/chart/top/?ref_=nv_mv_250,76. Amadeus,,1984,2h 40m,76. Amadeus,https://www.imdb.com/title/tt0086879/?ref_=chttp_t_76,G
+1718339113-77,https://www.imdb.com/chart/top/?ref_=nv_mv_250,77. Toy Story,,1995,1h 21m,77. Toy Story,https://www.imdb.com/title/tt0114709/?ref_=chttp_t_77,PG-13
+1718339113-78,https://www.imdb.com/chart/top/?ref_=nv_mv_250,78. Avengers: Endgame,,2019,3h 1m,78. Avengers: Endgame,https://www.imdb.com/title/tt4154796/?ref_=chttp_t_78,R
+1718339113-79,https://www.imdb.com/chart/top/?ref_=nv_mv_250,79. Das Boot,,1981,2h 29m,79. Das Boot,https://www.imdb.com/title/tt0082096/?ref_=chttp_t_79,R
+1718339113-80,https://www.imdb.com/chart/top/?ref_=nv_mv_250,80. Braveheart,,1995,2h 58m,80. Braveheart,https://www.imdb.com/title/tt0112573/?ref_=chttp_t_80,PG-13
+1718339113-81,https://www.imdb.com/chart/top/?ref_=nv_mv_250,81. Good Will Hunting,,1997,2h 6m,81. Good Will Hunting,https://www.imdb.com/title/tt0119217/?ref_=chttp_t_81,R
+1718339113-82,https://www.imdb.com/chart/top/?ref_=nv_mv_250,82. Princess Mononoke,,1997,2h 14m,82. Princess Mononoke,https://www.imdb.com/title/tt0119698/?ref_=chttp_t_82,Not Rated
+1718339113-83,https://www.imdb.com/chart/top/?ref_=nv_mv_250,83. Joker,,2019,2h 2m,83. Joker,https://www.imdb.com/title/tt7286456/?ref_=chttp_t_83,R
+1718339113-84,https://www.imdb.com/chart/top/?ref_=nv_mv_250,84. Your Name.,,2016,1h 46m,84. Your Name.,https://www.imdb.com/title/tt5311514/?ref_=chttp_t_84,PG-13
+1718339113-85,https://www.imdb.com/chart/top/?ref_=nv_mv_250,85. High and Low,,1963,2h 23m,85. High and Low,https://www.imdb.com/title/tt0057565/?ref_=chttp_t_85,G
+1718339113-86,https://www.imdb.com/chart/top/?ref_=nv_mv_250,86. Once Upon a Time in America,,1984,3h 49m,86. Once Upon a Time in America,https://www.imdb.com/title/tt0087843/?ref_=chttp_t_86,R
+1718339113-87,https://www.imdb.com/chart/top/?ref_=nv_mv_250,87. 3 Idiots,,2009,2h 50m,87. 3 Idiots,https://www.imdb.com/title/tt1187043/?ref_=chttp_t_87,Not Rated
+1718339113-88,https://www.imdb.com/chart/top/?ref_=nv_mv_250,88. Singin' in the Rain,,1952,1h 43m,88. Singin' in the Rain,https://www.imdb.com/title/tt0045152/?ref_=chttp_t_88,NC-17
+1718339113-89,https://www.imdb.com/chart/top/?ref_=nv_mv_250,89. Capernaum,,2018,2h 6m,89. Capernaum,https://www.imdb.com/title/tt8267604/?ref_=chttp_t_89,G
+1718339113-90,https://www.imdb.com/chart/top/?ref_=nv_mv_250,90. Come and See,,1985,2h 22m,90. Come and See,https://www.imdb.com/title/tt0091251/?ref_=chttp_t_90,PG
+1718339113-91,https://www.imdb.com/chart/top/?ref_=nv_mv_250,91. Requiem for a Dream,,2000,1h 42m,91. Requiem for a Dream,https://www.imdb.com/title/tt0180093/?ref_=chttp_t_91,R
+1718339113-92,https://www.imdb.com/chart/top/?ref_=nv_mv_250,92. Toy Story 3,,2010,1h 43m,92. Toy Story 3,https://www.imdb.com/title/tt0435761/?ref_=chttp_t_92,R
+1718339113-93,https://www.imdb.com/chart/top/?ref_=nv_mv_250,93. Star Wars: Episode VI - Return of the Jedi,,1983,2h 11m,93. Star Wars: Episode VI - Return of the Jedi,https://www.imdb.com/title/tt0086190/?ref_=chttp_t_93,G
+1718339113-94,https://www.imdb.com/chart/top/?ref_=nv_mv_250,94. Eternal Sunshine of the Spotless Mind,,2004,1h 48m,94. Eternal Sunshine of the Spotless Mind,https://www.imdb.com/title/tt0338013/?ref_=chttp_t_94,R
+1718339113-95,https://www.imdb.com/chart/top/?ref_=nv_mv_250,95. The Hunt,,2012,1h 55m,95. The Hunt,https://www.imdb.com/title/tt2106476/?ref_=chttp_t_95,Not Rated
+1718339113-96,https://www.imdb.com/chart/top/?ref_=nv_mv_250,96. 2001: A Space Odyssey,,1968,2h 29m,96. 2001: A Space Odyssey,https://www.imdb.com/title/tt0062622/?ref_=chttp_t_96,R
+1718339113-97,https://www.imdb.com/chart/top/?ref_=nv_mv_250,97. Reservoir Dogs,,1992,1h 39m,97. Reservoir Dogs,https://www.imdb.com/title/tt0105236/?ref_=chttp_t_97,PG
+1718339113-98,https://www.imdb.com/chart/top/?ref_=nv_mv_250,98. Ikiru,,1952,2h 23m,98. Ikiru,https://www.imdb.com/title/tt0044741/?ref_=chttp_t_98,Approved
+1718339113-99,https://www.imdb.com/chart/top/?ref_=nv_mv_250,99. Oppenheimer,,2023,3h,99. Oppenheimer,https://www.imdb.com/title/tt15398776/?ref_=chttp_t_99,R
+1718339113-100,https://www.imdb.com/chart/top/?ref_=nv_mv_250,100. Lawrence of Arabia,,1962,3h 38m,100. Lawrence of Arabia,https://www.imdb.com/title/tt0056172/?ref_=chttp_t_100,Approved
+1718339113-101,https://www.imdb.com/chart/top/?ref_=nv_mv_250,101. The Apartment,,1960,2h 5m,101. The Apartment,https://www.imdb.com/title/tt0053604/?ref_=chttp_t_101,PG
+1718339113-102,https://www.imdb.com/chart/top/?ref_=nv_mv_250,102. Incendies,,2010,2h 11m,102. Incendies,https://www.imdb.com/title/tt1255953/?ref_=chttp_t_102,Passed
+1718339113-103,https://www.imdb.com/chart/top/?ref_=nv_mv_250,103. North by Northwest,,1959,2h 16m,103. North by Northwest,https://www.imdb.com/title/tt0053125/?ref_=chttp_t_103,R
+1718339113-104,https://www.imdb.com/chart/top/?ref_=nv_mv_250,104. Citizen Kane,,1941,1h 59m,104. Citizen Kane,https://www.imdb.com/title/tt0033467/?ref_=chttp_t_104,Approved
+1718339113-105,https://www.imdb.com/chart/top/?ref_=nv_mv_250,105. M,,1931,1h 39m,105. M,https://www.imdb.com/title/tt0022100/?ref_=chttp_t_105,PG
+1718339113-106,https://www.imdb.com/chart/top/?ref_=nv_mv_250,106. Scarface,,1983,2h 50m,106. Scarface,https://www.imdb.com/title/tt0086250/?ref_=chttp_t_106,R
+1718339113-107,https://www.imdb.com/chart/top/?ref_=nv_mv_250,107. Double Indemnity,,1944,1h 47m,107. Double Indemnity,https://www.imdb.com/title/tt0036775/?ref_=chttp_t_107,R
+1718339113-108,https://www.imdb.com/chart/top/?ref_=nv_mv_250,108. Vertigo,,1958,2h 8m,108. Vertigo,https://www.imdb.com/title/tt0052357/?ref_=chttp_t_108,R
+1718339113-109,https://www.imdb.com/chart/top/?ref_=nv_mv_250,109. Full Metal Jacket,,1987,1h 56m,109. Full Metal Jacket,https://www.imdb.com/title/tt0093058/?ref_=chttp_t_109,PG
+1718339113-110,https://www.imdb.com/chart/top/?ref_=nv_mv_250,110. Amélie,,2001,2h 2m,110. Amélie,https://www.imdb.com/title/tt0211915/?ref_=chttp_t_110,R
+1718339113-111,https://www.imdb.com/chart/top/?ref_=nv_mv_250,111. Heat,,1995,2h 50m,111. Heat,https://www.imdb.com/title/tt0113277/?ref_=chttp_t_111,Approved
+1718339113-112,https://www.imdb.com/chart/top/?ref_=nv_mv_250,112. Up,,2009,1h 36m,112. Up,https://www.imdb.com/title/tt1049413/?ref_=chttp_t_112,PG-13
+1718339113-113,https://www.imdb.com/chart/top/?ref_=nv_mv_250,113. A Clockwork Orange,,1971,2h 16m,113. A Clockwork Orange,https://www.imdb.com/title/tt0066921/?ref_=chttp_t_113,PG
+1718339113-114,https://www.imdb.com/chart/top/?ref_=nv_mv_250,114. To Kill a Mockingbird,,1962,2h 9m,114. To Kill a Mockingbird,https://www.imdb.com/title/tt0056592/?ref_=chttp_t_114,PG-13
+1718339113-115,https://www.imdb.com/chart/top/?ref_=nv_mv_250,115. A Separation,,2011,2h 3m,115. A Separation,https://www.imdb.com/title/tt1832382/?ref_=chttp_t_115,R
+1718339113-116,https://www.imdb.com/chart/top/?ref_=nv_mv_250,116. The Sting,,1973,2h 9m,116. The Sting,https://www.imdb.com/title/tt0070735/?ref_=chttp_t_116,PG
+1718339113-117,https://www.imdb.com/chart/top/?ref_=nv_mv_250,117. Indiana Jones and the Last Crusade,,1989,2h 7m,117. Indiana Jones and the Last Crusade,https://www.imdb.com/title/tt0097576/?ref_=chttp_t_117,Not Rated
+1718339113-118,https://www.imdb.com/chart/top/?ref_=nv_mv_250,118. Die Hard,,1988,2h 12m,118. Die Hard,https://www.imdb.com/title/tt0095016/?ref_=chttp_t_118,R
+1718339113-119,https://www.imdb.com/chart/top/?ref_=nv_mv_250,119. Like Stars on Earth,,2007,2h 42m,119. Like Stars on Earth,https://www.imdb.com/title/tt0986264/?ref_=chttp_t_119,R
+1718339113-120,https://www.imdb.com/chart/top/?ref_=nv_mv_250,120. Metropolis,,1927,2h 33m,120. Metropolis,https://www.imdb.com/title/tt0017136/?ref_=chttp_t_120,R
+1718339113-121,https://www.imdb.com/chart/top/?ref_=nv_mv_250,121. Snatch,,2000,1h 42m,121. Snatch,https://www.imdb.com/title/tt0208092/?ref_=chttp_t_121,PG-13
+1718339113-122,https://www.imdb.com/chart/top/?ref_=nv_mv_250,122. L.A. Confidential,,1997,2h 18m,122. L.A. Confidential,https://www.imdb.com/title/tt0119488/?ref_=chttp_t_122,Not Rated
+1718339113-123,https://www.imdb.com/chart/top/?ref_=nv_mv_250,123. 1917,,2019,1h 59m,123. 1917,https://www.imdb.com/title/tt8579674/?ref_=chttp_t_123,R
+1718339113-124,https://www.imdb.com/chart/top/?ref_=nv_mv_250,124. Hamilton,,2020,2h 40m,124. Hamilton,https://www.imdb.com/title/tt8503618/?ref_=chttp_t_124,R
+1718339113-125,https://www.imdb.com/chart/top/?ref_=nv_mv_250,125. Bicycle Thieves,,1948,1h 29m,125. Bicycle Thieves,https://www.imdb.com/title/tt0040522/?ref_=chttp_t_125,Not Rated
+1718339113-126,https://www.imdb.com/chart/top/?ref_=nv_mv_250,126. Taxi Driver,,1976,1h 54m,126. Taxi Driver,https://www.imdb.com/title/tt0075314/?ref_=chttp_t_126,R
+1718339113-127,https://www.imdb.com/chart/top/?ref_=nv_mv_250,127. Downfall,,2004,2h 36m,127. Downfall,https://www.imdb.com/title/tt0363163/?ref_=chttp_t_127,PG-13
+1718339113-128,https://www.imdb.com/chart/top/?ref_=nv_mv_250,128. Dangal,,2016,2h 41m,128. Dangal,https://www.imdb.com/title/tt5074352/?ref_=chttp_t_128,R
+1718339113-129,https://www.imdb.com/chart/top/?ref_=nv_mv_250,129. For a Few Dollars More,,1965,2h 12m,129. For a Few Dollars More,https://www.imdb.com/title/tt0059578/?ref_=chttp_t_129,Approved
+1718339113-130,https://www.imdb.com/chart/top/?ref_=nv_mv_250,130. Batman Begins,,2005,2h 20m,130. Batman Begins,https://www.imdb.com/title/tt0372784/?ref_=chttp_t_130,PG-13
+1718339113-131,https://www.imdb.com/chart/top/?ref_=nv_mv_250,131. The Wolf of Wall Street,,2013,3h,131. The Wolf of Wall Street,https://www.imdb.com/title/tt0993846/?ref_=chttp_t_131,Passed
+1718339113-132,https://www.imdb.com/chart/top/?ref_=nv_mv_250,132. Some Like It Hot,,1959,2h 1m,132. Some Like It Hot,https://www.imdb.com/title/tt0053291/?ref_=chttp_t_132,PG-13
+1718339113-133,https://www.imdb.com/chart/top/?ref_=nv_mv_250,133. Green Book,,2018,2h 10m,133. Green Book,https://www.imdb.com/title/tt6966692/?ref_=chttp_t_133,Approved
+1718339113-134,https://www.imdb.com/chart/top/?ref_=nv_mv_250,134. The Kid,,1921,1h 8m,134. The Kid,https://www.imdb.com/title/tt0012349/?ref_=chttp_t_134,PG
+1718339113-135,https://www.imdb.com/chart/top/?ref_=nv_mv_250,135. The Father,,2020,1h 37m,135. The Father,https://www.imdb.com/title/tt10272386/?ref_=chttp_t_135,Approved
+1718339113-136,https://www.imdb.com/chart/top/?ref_=nv_mv_250,136. Judgment at Nuremberg,,1961,2h 59m,136. Judgment at Nuremberg,https://www.imdb.com/title/tt0055031/?ref_=chttp_t_136,R
+1718339113-137,https://www.imdb.com/chart/top/?ref_=nv_mv_250,137. The Truman Show,,1998,1h 43m,137. The Truman Show,https://www.imdb.com/title/tt0120382/?ref_=chttp_t_137,PG-13
+1718339113-138,https://www.imdb.com/chart/top/?ref_=nv_mv_250,138. All About Eve,,1950,2h 18m,138. All About Eve,https://www.imdb.com/title/tt0042192/?ref_=chttp_t_138,R
+1718339113-139,https://www.imdb.com/chart/top/?ref_=nv_mv_250,139. Shutter Island,,2010,2h 18m,139. Shutter Island,https://www.imdb.com/title/tt1130884/?ref_=chttp_t_139,R
+1718339113-140,https://www.imdb.com/chart/top/?ref_=nv_mv_250,140. Top Gun: Maverick,,2022,2h 10m,140. Top Gun: Maverick,https://www.imdb.com/title/tt1745960/?ref_=chttp_t_140,PG-13
+1718339113-141,https://www.imdb.com/chart/top/?ref_=nv_mv_250,141. There Will Be Blood,,2007,2h 38m,141. There Will Be Blood,https://www.imdb.com/title/tt0469494/?ref_=chttp_t_141,R
+1718339113-142,https://www.imdb.com/chart/top/?ref_=nv_mv_250,142. Casino,,1995,2h 58m,142. Casino,https://www.imdb.com/title/tt0112641/?ref_=chttp_t_142,PG-13
+1718339113-143,https://www.imdb.com/chart/top/?ref_=nv_mv_250,143. Jurassic Park,,1993,2h 7m,143. Jurassic Park,https://www.imdb.com/title/tt0107290/?ref_=chttp_t_143,R
+1718339113-144,https://www.imdb.com/chart/top/?ref_=nv_mv_250,144. Ran,,1985,2h 40m,144. Ran,https://www.imdb.com/title/tt0089881/?ref_=chttp_t_144,R
+1718339113-145,https://www.imdb.com/chart/top/?ref_=nv_mv_250,145. The Sixth Sense,,1999,1h 47m,145. The Sixth Sense,https://www.imdb.com/title/tt0167404/?ref_=chttp_t_145,R
+1718339113-146,https://www.imdb.com/chart/top/?ref_=nv_mv_250,146. Pan's Labyrinth,,2006,1h 58m,146. Pan's Labyrinth,https://www.imdb.com/title/tt0457430/?ref_=chttp_t_146,PG-13
+1718339113-147,https://www.imdb.com/chart/top/?ref_=nv_mv_250,147. Unforgiven,,1992,2h 10m,147. Unforgiven,https://www.imdb.com/title/tt0105695/?ref_=chttp_t_147,R
+1718339113-148,https://www.imdb.com/chart/top/?ref_=nv_mv_250,148. No Country for Old Men,,2007,2h 2m,148. No Country for Old Men,https://www.imdb.com/title/tt0477348/?ref_=chttp_t_148,R
+1718339113-149,https://www.imdb.com/chart/top/?ref_=nv_mv_250,149. A Beautiful Mind,,2001,2h 15m,149. A Beautiful Mind,https://www.imdb.com/title/tt0268978/?ref_=chttp_t_149,Approved
+1718339113-150,https://www.imdb.com/chart/top/?ref_=nv_mv_250,150. The Thing,,1982,1h 49m,150. The Thing,https://www.imdb.com/title/tt0084787/?ref_=chttp_t_150,Not Rated
+1718339113-151,https://www.imdb.com/chart/top/?ref_=nv_mv_250,151. Kill Bill: Vol. 1,,2003,1h 51m,151. Kill Bill: Vol. 1,https://www.imdb.com/title/tt0266697/?ref_=chttp_t_151,PG
+1718339113-152,https://www.imdb.com/chart/top/?ref_=nv_mv_250,152. The Treasure of the Sierra Madre,,1948,2h 6m,152. The Treasure of the Sierra Madre,https://www.imdb.com/title/tt0040897/?ref_=chttp_t_152,Approved
+1718339113-153,https://www.imdb.com/chart/top/?ref_=nv_mv_250,153. Yojimbo,,1961,1h 50m,153. Yojimbo,https://www.imdb.com/title/tt0055630/?ref_=chttp_t_153,G
+1718339113-154,https://www.imdb.com/chart/top/?ref_=nv_mv_250,154. Monty Python and the Holy Grail,,1975,1h 31m,154. Monty Python and the Holy Grail,https://www.imdb.com/title/tt0071853/?ref_=chttp_t_154,R
+1718339113-155,https://www.imdb.com/chart/top/?ref_=nv_mv_250,155. The Great Escape,,1963,2h 52m,155. The Great Escape,https://www.imdb.com/title/tt0057115/?ref_=chttp_t_155,PG
+1718339113-156,https://www.imdb.com/chart/top/?ref_=nv_mv_250,156. Finding Nemo,,2003,1h 40m,156. Finding Nemo,https://www.imdb.com/title/tt0266543/?ref_=chttp_t_156,Not Rated
+1718339113-157,https://www.imdb.com/chart/top/?ref_=nv_mv_250,157. Prisoners,,2013,2h 33m,157. Prisoners,https://www.imdb.com/title/tt1392214/?ref_=chttp_t_157,PG
+1718339113-158,https://www.imdb.com/chart/top/?ref_=nv_mv_250,158. Howl's Moving Castle,,2004,1h 59m,158. Howl's Moving Castle,https://www.imdb.com/title/tt0347149/?ref_=chttp_t_158,PG
+1718339113-159,https://www.imdb.com/chart/top/?ref_=nv_mv_250,159. Rashomon,,1950,1h 28m,159. Rashomon,https://www.imdb.com/title/tt0042876/?ref_=chttp_t_159,R
+1718339113-160,https://www.imdb.com/chart/top/?ref_=nv_mv_250,160. The Elephant Man,,1980,2h 4m,160. The Elephant Man,https://www.imdb.com/title/tt0080678/?ref_=chttp_t_160,G
+1718339113-161,https://www.imdb.com/chart/top/?ref_=nv_mv_250,161. Dial M for Murder,,1954,1h 45m,161. Dial M for Murder,https://www.imdb.com/title/tt0046912/?ref_=chttp_t_161,R
+1718339113-162,https://www.imdb.com/chart/top/?ref_=nv_mv_250,162. Chinatown,,1974,2h 10m,162. Chinatown,https://www.imdb.com/title/tt0071315/?ref_=chttp_t_162,R
+1718339113-163,https://www.imdb.com/chart/top/?ref_=nv_mv_250,163. Gone with the Wind,,1939,3h 58m,163. Gone with the Wind,https://www.imdb.com/title/tt0031381/?ref_=chttp_t_163,R
+1718339113-164,https://www.imdb.com/chart/top/?ref_=nv_mv_250,"164. Lock, Stock and Two Smoking Barrels",,1998,1h 47m,"164. Lock, Stock and Two Smoking Barrels",https://www.imdb.com/title/tt0120735/?ref_=chttp_t_164,PG
+1718339113-165,https://www.imdb.com/chart/top/?ref_=nv_mv_250,165. V for Vendetta,,2005,2h 12m,165. V for Vendetta,https://www.imdb.com/title/tt0434409/?ref_=chttp_t_165,R
+1718339113-166,https://www.imdb.com/chart/top/?ref_=nv_mv_250,166. The Secret in Their Eyes,,2009,2h 9m,166. The Secret in Their Eyes,https://www.imdb.com/title/tt1305806/?ref_=chttp_t_166,R
+1718339113-167,https://www.imdb.com/chart/top/?ref_=nv_mv_250,167. Inside Out,,2015,1h 35m,167. Inside Out,https://www.imdb.com/title/tt2096673/?ref_=chttp_t_167,R
+1718339113-168,https://www.imdb.com/chart/top/?ref_=nv_mv_250,168. Raging Bull,,1980,2h 9m,168. Raging Bull,https://www.imdb.com/title/tt0081398/?ref_=chttp_t_168,PG
+1718339113-169,https://www.imdb.com/chart/top/?ref_=nv_mv_250,"169. Three Billboards Outside Ebbing, Missouri",,2017,1h 55m,"169. Three Billboards Outside Ebbing, Missouri",https://www.imdb.com/title/tt5027774/?ref_=chttp_t_169,PG
+1718339113-170,https://www.imdb.com/chart/top/?ref_=nv_mv_250,170. Trainspotting,,1996,1h 33m,170. Trainspotting,https://www.imdb.com/title/tt0117951/?ref_=chttp_t_170,R
+1718339113-171,https://www.imdb.com/chart/top/?ref_=nv_mv_250,171. The Bridge on the River Kwai,,1957,2h 41m,171. The Bridge on the River Kwai,https://www.imdb.com/title/tt0050212/?ref_=chttp_t_171,PG-13
+1718339113-172,https://www.imdb.com/chart/top/?ref_=nv_mv_250,172. Klaus,,2019,1h 36m,172. Klaus,https://www.imdb.com/title/tt4729430/?ref_=chttp_t_172,PG-13
+1718339113-173,https://www.imdb.com/chart/top/?ref_=nv_mv_250,173. Fargo,,1996,1h 38m,173. Fargo,https://www.imdb.com/title/tt0116282/?ref_=chttp_t_173,PG-13
+1718339113-174,https://www.imdb.com/chart/top/?ref_=nv_mv_250,174. Catch Me If You Can,,2002,2h 21m,174. Catch Me If You Can,https://www.imdb.com/title/tt0264464/?ref_=chttp_t_174,R
+1718339113-175,https://www.imdb.com/chart/top/?ref_=nv_mv_250,175. Spider-Man: No Way Home,,2021,2h 28m,175. Spider-Man: No Way Home,https://www.imdb.com/title/tt10872600/?ref_=chttp_t_175,PG-13
+1718339113-176,https://www.imdb.com/chart/top/?ref_=nv_mv_250,176. Warrior,,2011,2h 20m,176. Warrior,https://www.imdb.com/title/tt1291584/?ref_=chttp_t_176,PG-13
+1718339113-177,https://www.imdb.com/chart/top/?ref_=nv_mv_250,177. Gran Torino,,2008,1h 56m,177. Gran Torino,https://www.imdb.com/title/tt1205489/?ref_=chttp_t_177,G
+1718339113-178,https://www.imdb.com/chart/top/?ref_=nv_mv_250,178. Harry Potter and the Deathly Hallows: Part 2,,2011,2h 10m,178. Harry Potter and the Deathly Hallows: Part 2,https://www.imdb.com/title/tt1201607/?ref_=chttp_t_178,PG
+1718339113-179,https://www.imdb.com/chart/top/?ref_=nv_mv_250,179. Million Dollar Baby,,2004,2h 12m,179. Million Dollar Baby,https://www.imdb.com/title/tt0405159/?ref_=chttp_t_179,R
+1718339113-180,https://www.imdb.com/chart/top/?ref_=nv_mv_250,180. My Neighbor Totoro,,1988,1h 26m,180. My Neighbor Totoro,https://www.imdb.com/title/tt0096283/?ref_=chttp_t_180,G
+1718339113-181,https://www.imdb.com/chart/top/?ref_=nv_mv_250,181. Children of Heaven,,1997,1h 29m,181. Children of Heaven,https://www.imdb.com/title/tt0118849/?ref_=chttp_t_181,R
+1718339113-182,https://www.imdb.com/chart/top/?ref_=nv_mv_250,182. 12 Years a Slave,,2013,2h 14m,182. 12 Years a Slave,https://www.imdb.com/title/tt2024544/?ref_=chttp_t_182,R
+1718339113-183,https://www.imdb.com/chart/top/?ref_=nv_mv_250,183. Ben-Hur,,1959,3h 32m,183. Ben-Hur,https://www.imdb.com/title/tt0052618/?ref_=chttp_t_183,PG
+1718339113-184,https://www.imdb.com/chart/top/?ref_=nv_mv_250,184. Blade Runner,,1982,1h 57m,184. Blade Runner,https://www.imdb.com/title/tt0083658/?ref_=chttp_t_184,R
+1718339113-185,https://www.imdb.com/chart/top/?ref_=nv_mv_250,185. Before Sunrise,,1995,1h 41m,185. Before Sunrise,https://www.imdb.com/title/tt0112471/?ref_=chttp_t_185,R
+1718339113-186,https://www.imdb.com/chart/top/?ref_=nv_mv_250,186. Barry Lyndon,,1975,3h 5m,186. Barry Lyndon,https://www.imdb.com/title/tt0072684/?ref_=chttp_t_186,R
+1718339113-187,https://www.imdb.com/chart/top/?ref_=nv_mv_250,187. The Grand Budapest Hotel,,2014,1h 39m,187. The Grand Budapest Hotel,https://www.imdb.com/title/tt2278388/?ref_=chttp_t_187,R
+1718339113-188,https://www.imdb.com/chart/top/?ref_=nv_mv_250,188. Mad Max: Fury Road,,2015,2h,188. Mad Max: Fury Road,https://www.imdb.com/title/tt1392190/?ref_=chttp_t_188,Approved
+1718339113-189,https://www.imdb.com/chart/top/?ref_=nv_mv_250,189. Gone Girl,,2014,2h 29m,189. Gone Girl,https://www.imdb.com/title/tt2267998/?ref_=chttp_t_189,PG
+1718339113-190,https://www.imdb.com/chart/top/?ref_=nv_mv_250,190. Hacksaw Ridge,,2016,2h 19m,190. Hacksaw Ridge,https://www.imdb.com/title/tt2119532/?ref_=chttp_t_190,R
+1718339113-191,https://www.imdb.com/chart/top/?ref_=nv_mv_250,191. The Gold Rush,,1925,1h 35m,191. The Gold Rush,https://www.imdb.com/title/tt0015864/?ref_=chttp_t_191,Not Rated
+1718339113-192,https://www.imdb.com/chart/top/?ref_=nv_mv_250,192. Dead Poets Society,,1989,2h 8m,192. Dead Poets Society,https://www.imdb.com/title/tt0097165/?ref_=chttp_t_192,R
+1718339113-193,https://www.imdb.com/chart/top/?ref_=nv_mv_250,193. In the Name of the Father,,1993,2h 13m,193. In the Name of the Father,https://www.imdb.com/title/tt0107207/?ref_=chttp_t_193,R
+1718339113-194,https://www.imdb.com/chart/top/?ref_=nv_mv_250,194. Memories of Murder,,2003,2h 12m,194. Memories of Murder,https://www.imdb.com/title/tt0353969/?ref_=chttp_t_194,G
+1718339113-195,https://www.imdb.com/chart/top/?ref_=nv_mv_250,195. Wild Tales,,2014,2h 2m,195. Wild Tales,https://www.imdb.com/title/tt3011894/?ref_=chttp_t_195,Passed
+1718339113-196,https://www.imdb.com/chart/top/?ref_=nv_mv_250,196. The Deer Hunter,,1978,3h 3m,196. The Deer Hunter,https://www.imdb.com/title/tt0077416/?ref_=chttp_t_196,Approved
+1718339113-197,https://www.imdb.com/chart/top/?ref_=nv_mv_250,"197. Monsters, Inc.",,2001,1h 32m,"197. Monsters, Inc.",https://www.imdb.com/title/tt0198781/?ref_=chttp_t_197,Passed
+1718339113-198,https://www.imdb.com/chart/top/?ref_=nv_mv_250,198. The General,,1926,1h 18m,198. The General,https://www.imdb.com/title/tt0017925/?ref_=chttp_t_198,PG
+1718339113-199,https://www.imdb.com/chart/top/?ref_=nv_mv_250,199. On the Waterfront,,1954,1h 48m,199. On the Waterfront,https://www.imdb.com/title/tt0047296/?ref_=chttp_t_199,PG
+1718339113-200,https://www.imdb.com/chart/top/?ref_=nv_mv_250,200. Sherlock Jr.,,1924,45m,200. Sherlock Jr.,https://www.imdb.com/title/tt0015324/?ref_=chttp_t_200,Approved
+1718339113-201,https://www.imdb.com/chart/top/?ref_=nv_mv_250,201. How to Train Your Dragon,,2010,1h 38m,201. How to Train Your Dragon,https://www.imdb.com/title/tt0892769/?ref_=chttp_t_201,Not Rated
+1718339113-202,https://www.imdb.com/chart/top/?ref_=nv_mv_250,202. Jaws,,1975,2h 4m,202. Jaws,https://www.imdb.com/title/tt0073195/?ref_=chttp_t_202,Not Rated
+1718339113-203,https://www.imdb.com/chart/top/?ref_=nv_mv_250,203. The Third Man,,1949,1h 33m,203. The Third Man,https://www.imdb.com/title/tt0041959/?ref_=chttp_t_203,Not Rated
+1718339113-204,https://www.imdb.com/chart/top/?ref_=nv_mv_250,204. The Wages of Fear,,1953,2h 11m,204. The Wages of Fear,https://www.imdb.com/title/tt0046268/?ref_=chttp_t_204,G
+1718339113-205,https://www.imdb.com/chart/top/?ref_=nv_mv_250,205. Mary and Max,,2009,1h 32m,205. Mary and Max,https://www.imdb.com/title/tt0978762/?ref_=chttp_t_205,Approved
+1718339113-206,https://www.imdb.com/chart/top/?ref_=nv_mv_250,206. Wild Strawberries,,1957,1h 31m,206. Wild Strawberries,https://www.imdb.com/title/tt0050986/?ref_=chttp_t_206,PG-13
+1718339113-207,https://www.imdb.com/chart/top/?ref_=nv_mv_250,207. Ratatouille,,2007,1h 51m,207. Ratatouille,https://www.imdb.com/title/tt0382932/?ref_=chttp_t_207,Not Rated
+1718339113-208,https://www.imdb.com/chart/top/?ref_=nv_mv_250,208. Mr. Smith Goes to Washington,,1939,2h 9m,208. Mr. Smith Goes to Washington,https://www.imdb.com/title/tt0031679/?ref_=chttp_t_208,R
+1718339113-209,https://www.imdb.com/chart/top/?ref_=nv_mv_250,209. Ford v Ferrari,,2019,2h 32m,209. Ford v Ferrari,https://www.imdb.com/title/tt1950186/?ref_=chttp_t_209,Not Rated
+1718339113-210,https://www.imdb.com/chart/top/?ref_=nv_mv_250,210. Tokyo Story,,1953,2h 16m,210. Tokyo Story,https://www.imdb.com/title/tt0046438/?ref_=chttp_t_210,R
+1718339113-211,https://www.imdb.com/chart/top/?ref_=nv_mv_250,211. The Big Lebowski,,1998,1h 57m,211. The Big Lebowski,https://www.imdb.com/title/tt0118715/?ref_=chttp_t_211,PG
+1718339113-212,https://www.imdb.com/chart/top/?ref_=nv_mv_250,212. The Seventh Seal,,1957,1h 36m,212. The Seventh Seal,https://www.imdb.com/title/tt0050976/?ref_=chttp_t_212,R
+1718339113-213,https://www.imdb.com/chart/top/?ref_=nv_mv_250,213. Room,,2015,1h 58m,213. Room,https://www.imdb.com/title/tt3170832/?ref_=chttp_t_213,R
+1718339113-214,https://www.imdb.com/chart/top/?ref_=nv_mv_250,214. Rocky,,1976,2h,214. Rocky,https://www.imdb.com/title/tt0075148/?ref_=chttp_t_214,PG-13
+1718339113-215,https://www.imdb.com/chart/top/?ref_=nv_mv_250,215. Logan,,2017,2h 17m,215. Logan,https://www.imdb.com/title/tt3315342/?ref_=chttp_t_215,R
+1718339113-216,https://www.imdb.com/chart/top/?ref_=nv_mv_250,216. Spotlight,,2015,2h 9m,216. Spotlight,https://www.imdb.com/title/tt1895587/?ref_=chttp_t_216,R
+1718339113-217,https://www.imdb.com/chart/top/?ref_=nv_mv_250,217. Hotel Rwanda,,2004,2h 1m,217. Hotel Rwanda,https://www.imdb.com/title/tt0395169/?ref_=chttp_t_217,Not Rated
+1718339113-218,https://www.imdb.com/chart/top/?ref_=nv_mv_250,218. The Terminator,,1984,1h 47m,218. The Terminator,https://www.imdb.com/title/tt0088247/?ref_=chttp_t_218,Passed
+1718339113-219,https://www.imdb.com/chart/top/?ref_=nv_mv_250,219. Platoon,,1986,2h,219. Platoon,https://www.imdb.com/title/tt0091763/?ref_=chttp_t_219,R
+1718339113-220,https://www.imdb.com/chart/top/?ref_=nv_mv_250,220. La haine,,1995,1h 38m,220. La haine,https://www.imdb.com/title/tt0113247/?ref_=chttp_t_220,Approved
+1718339113-221,https://www.imdb.com/chart/top/?ref_=nv_mv_250,221. The Passion of Joan of Arc,,1928,1h 54m,221. The Passion of Joan of Arc,https://www.imdb.com/title/tt0019254/?ref_=chttp_t_221,PG-13
+1718339113-222,https://www.imdb.com/chart/top/?ref_=nv_mv_250,222. Before Sunset,,2004,1h 20m,222. Before Sunset,https://www.imdb.com/title/tt0381681/?ref_=chttp_t_222,R
+1718339113-223,https://www.imdb.com/chart/top/?ref_=nv_mv_250,223. The Best Years of Our Lives,,1946,2h 50m,223. The Best Years of Our Lives,https://www.imdb.com/title/tt0036868/?ref_=chttp_t_223,Approved
+1718339113-224,https://www.imdb.com/chart/top/?ref_=nv_mv_250,224. Pirates of the Caribbean: The Curse of the Black Pearl,,2003,2h 23m,224. Pirates of the Caribbean: The Curse of the Black Pearl,https://www.imdb.com/title/tt0325980/?ref_=chttp_t_224,R
+1718339113-225,https://www.imdb.com/chart/top/?ref_=nv_mv_250,225. The Exorcist,,1973,2h 2m,225. The Exorcist,https://www.imdb.com/title/tt0070047/?ref_=chttp_t_225,R
+1718339113-226,https://www.imdb.com/chart/top/?ref_=nv_mv_250,226. Jai Bhim,,2021,2h 44m,226. Jai Bhim,https://www.imdb.com/title/tt15097216/?ref_=chttp_t_226,G
+1718339113-227,https://www.imdb.com/chart/top/?ref_=nv_mv_250,227. Rush,,2013,2h 3m,227. Rush,https://www.imdb.com/title/tt1979320/?ref_=chttp_t_227,R
+1718339113-228,https://www.imdb.com/chart/top/?ref_=nv_mv_250,228. Network,,1976,2h 1m,228. Network,https://www.imdb.com/title/tt0074958/?ref_=chttp_t_228,PG
+1718339113-229,https://www.imdb.com/chart/top/?ref_=nv_mv_250,229. The Wizard of Oz,,1939,1h 42m,229. The Wizard of Oz,https://www.imdb.com/title/tt0032138/?ref_=chttp_t_229,G
+1718339113-230,https://www.imdb.com/chart/top/?ref_=nv_mv_250,230. Stand by Me,,1986,1h 29m,230. Stand by Me,https://www.imdb.com/title/tt0092005/?ref_=chttp_t_230,Not Rated
+1718339113-231,https://www.imdb.com/chart/top/?ref_=nv_mv_250,231. The Incredibles,,2004,1h 55m,231. The Incredibles,https://www.imdb.com/title/tt0317705/?ref_=chttp_t_231,Not Rated
+1718339113-232,https://www.imdb.com/chart/top/?ref_=nv_mv_250,232. Hachi: A Dog's Tale,,2009,1h 33m,232. Hachi: A Dog's Tale,https://www.imdb.com/title/tt1028532/?ref_=chttp_t_232,G
+1718339113-233,https://www.imdb.com/chart/top/?ref_=nv_mv_250,233. My Father and My Son,,2005,1h 52m,233. My Father and My Son,https://www.imdb.com/title/tt0476735/?ref_=chttp_t_233,R
+1718339113-234,https://www.imdb.com/chart/top/?ref_=nv_mv_250,234. The Handmaiden,,2016,2h 25m,234. The Handmaiden,https://www.imdb.com/title/tt4016934/?ref_=chttp_t_234,Approved
+1718339113-235,https://www.imdb.com/chart/top/?ref_=nv_mv_250,235. The Sound of Music,,1965,2h 52m,235. The Sound of Music,https://www.imdb.com/title/tt0059742/?ref_=chttp_t_235,Not Rated
+1718339113-236,https://www.imdb.com/chart/top/?ref_=nv_mv_250,236. Into the Wild,,2007,2h 28m,236. Into the Wild,https://www.imdb.com/title/tt0758758/?ref_=chttp_t_236,Approved
+1718339113-237,https://www.imdb.com/chart/top/?ref_=nv_mv_250,237. To Be or Not to Be,,1942,1h 39m,237. To Be or Not to Be,https://www.imdb.com/title/tt0035446/?ref_=chttp_t_237,PG
+1718339113-238,https://www.imdb.com/chart/top/?ref_=nv_mv_250,238. The Battle of Algiers,,1966,2h 1m,238. The Battle of Algiers,https://www.imdb.com/title/tt0058946/?ref_=chttp_t_238,R
+1718339113-239,https://www.imdb.com/chart/top/?ref_=nv_mv_250,239. The Grapes of Wrath,,1940,2h 9m,239. The Grapes of Wrath,https://www.imdb.com/title/tt0032551/?ref_=chttp_t_239,PG
+1718339113-240,https://www.imdb.com/chart/top/?ref_=nv_mv_250,240. Groundhog Day,,1993,1h 41m,240. Groundhog Day,https://www.imdb.com/title/tt0107048/?ref_=chttp_t_240,Approved
+1718339113-241,https://www.imdb.com/chart/top/?ref_=nv_mv_250,241. Amores Perros,,2000,2h 34m,241. Amores Perros,https://www.imdb.com/title/tt0245712/?ref_=chttp_t_241,Approved
+1718339113-242,https://www.imdb.com/chart/top/?ref_=nv_mv_250,242. The Iron Giant,,1999,1h 26m,242. The Iron Giant,https://www.imdb.com/title/tt0129167/?ref_=chttp_t_242,PG-13
+1718339113-243,https://www.imdb.com/chart/top/?ref_=nv_mv_250,243. Rebecca,,1940,2h 10m,243. Rebecca,https://www.imdb.com/title/tt0032976/?ref_=chttp_t_243,Approved
+1718339113-244,https://www.imdb.com/chart/top/?ref_=nv_mv_250,244. Cool Hand Luke,,1967,2h 7m,244. Cool Hand Luke,https://www.imdb.com/title/tt0061512/?ref_=chttp_t_244,Not Rated
+1718339113-245,https://www.imdb.com/chart/top/?ref_=nv_mv_250,245. The Help,,2011,2h 26m,245. The Help,https://www.imdb.com/title/tt1454029/?ref_=chttp_t_245,PG-13
+1718339113-246,https://www.imdb.com/chart/top/?ref_=nv_mv_250,246. It Happened One Night,,1934,1h 45m,246. It Happened One Night,https://www.imdb.com/title/tt0025316/?ref_=chttp_t_246,G
+1718339113-247,https://www.imdb.com/chart/top/?ref_=nv_mv_250,247. Drishyam,,2015,2h 43m,247. Drishyam,https://www.imdb.com/title/tt4430212/?ref_=chttp_t_247,Not Rated
+1718339113-248,https://www.imdb.com/chart/top/?ref_=nv_mv_250,248. Dances with Wolves,,1990,3h 1m,248. Dances with Wolves,https://www.imdb.com/title/tt0099348/?ref_=chttp_t_248,Not Rated
+1718339113-249,https://www.imdb.com/chart/top/?ref_=nv_mv_250,249. Aladdin,,1992,1h 30m,249. Aladdin,https://www.imdb.com/title/tt0103639/?ref_=chttp_t_249,Not Rated
+1718339113-250,https://www.imdb.com/chart/top/?ref_=nv_mv_250,250. Gangs of Wasseypur,,2012,5h 21m,250. Gangs of Wasseypur,https://www.imdb.com/title/tt1954470/?ref_=chttp_t_250,Not Rated
