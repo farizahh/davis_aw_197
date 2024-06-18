@@ -40,10 +40,6 @@ query_order = """
 cursor.execute(query_cust)
 data_cust = cursor.fetchall()
 
-# Menutup cursor dan koneksi database
-cursor.close()
-conn.close()
-
 # Membuat DataFrame dari hasil query
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
 
@@ -82,3 +78,7 @@ plt.grid(True)
 # Menampilkan plot di Streamlit
 st.markdown(f"<h2 style='text-align: center;'>Grafik Total Order Quantity vs Total Sales Amount </h2>", unsafe_allow_html=True)
 st.pyplot(plt)
+
+# Menutup cursor dan koneksi database
+cursor.close()
+conn.close()
