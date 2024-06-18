@@ -40,17 +40,12 @@ query_order = """
 cursor.execute(query_cust)
 data_cust = cursor.fetchall()
 
-# Eksekusi query untuk mengambil data order
-cursor.execute(query_order)
-data_order = cursor.fetchall()
-
 # Menutup cursor dan koneksi database
 cursor.close()
 conn.close()
 
 # Membuat DataFrame dari hasil query
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
-df_order = pd.DataFrame(data_order, columns=['TotalOrderQuantity', 'TotalSalesAmount'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
@@ -68,6 +63,11 @@ plt.grid(True)
 # Menampilkan plot di Streamlit
 st.markdown(f"<h2 style='text-align: center;'>Grafik Total Customer </h2>", unsafe_allow_html=True)
 st.pyplot(plt)
+
+# Eksekusi query untuk mengambil data order
+cursor.execute(query_order)
+data_order = cursor.fetchall()
+df_order = pd.DataFrame(data_order, columns=['TotalOrderQuantity', 'TotalSalesAmount'])
 
 #2 Relationship 
 st.subheader('2. Relationship (hubungan)')
