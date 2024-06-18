@@ -1,6 +1,5 @@
 import pymysql
 import pandas as pd
-from sqlalchemy import create_engine
 import streamlit as st
 import matplotlib.pyplot as plt
 
@@ -30,7 +29,7 @@ query_cust = """
 
 # Query SQL untuk mengambil data order quantity dari setiap unit price
 query_order = """
-    SELECT dc.CustomerKey, SUM(fs.OrderQuantity) AS TotalOrderQuantity, fs.SalesAmount
+    SELECT dc.CustomerKey, SUM(fs.OrderQuantity) AS TotalOrderQuantity, SUM(fs.SalesAmount) AS TotalSalesAmount
     FROM dimcustomer dc
     LEFT JOIN factinternetsales fs ON dc.CustomerKey = fs.CustomerKey
     GROUP BY dc.CustomerKey;
@@ -50,7 +49,7 @@ conn.close()
 
 # Membuat DataFrame dari hasil query
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
-df_order = pd.DataFrame(data_order, columns=['TotalOrderQuantity', 'SalesAmount'])
+df_order = pd.DataFrame(data_order, columns=['TotalSalesAmount', 'TotalOrderQuantity'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
@@ -72,10 +71,10 @@ st.pyplot(plt)
 st.subheader('2. Relationship (hubungan)')
 st.dataframe(df_order)
 plt.figure(figsize=(12, 6))
-plt.scatter(df_order['TotalOrderQuantity'], df_order['SalesAmount'], alpha=0.5)
+plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], alpha=0.5)
 plt.title('Relationship between Order Quantity and Sales Amount')
-plt.xlabel('Order Quantity')
-plt.ylabel('Sales Amount')
+plt.xlabel('Total Order Quantity')
+plt.ylabel('Total Sales Amount')
 plt.grid(True)
 
 # Menampilkan plot di Streamlit
