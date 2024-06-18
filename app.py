@@ -21,7 +21,7 @@ if conn:
     print('Connected to MySQL database')
 
 # Query SQL untuk mengambil data penjualan per tahun
-query = """
+query_cust = """
     SELECT dc.Gender, COUNT(fs.CustomerKey) AS TotalCustomers
     FROM dimcustomer dc
     LEFT JOIN factinternetsales fs ON dc.CustomerKey = fs.CustomerKey
@@ -29,7 +29,7 @@ query = """
 """
 
 # Eksekusi query
-cursor.execute(query)
+cursor.execute(query_cust)
 
 # Mendapatkan hasil query sebagai tuple
 data = cursor.fetchall()
