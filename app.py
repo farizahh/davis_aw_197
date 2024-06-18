@@ -18,8 +18,8 @@ if conn:
     print('Connected to MySQL database')
 
 # Mengambil data dari tabel users dan product_fact
-gender_query = "SELECT Gender, CustomerKey FROM dimcustomer"
-customer_query = "SELECT CustomerKey FROM factinternetsales"
+gender= "SELECT Gender, CustomerKey FROM dimcustomer"
+customer= "SELECT CustomerKey FROM factinternetsales"
 
 df_gender = pd.read_sql(gender, engine)
 df_customer = pd.read_sql(customer, engine)
