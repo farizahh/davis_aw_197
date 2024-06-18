@@ -30,7 +30,7 @@ query_cust = """
 
 # Query SQL untuk mengambil data order quantity dari setiap unit price
 query_order = """
-    SELECT dc.CustomerKey, SUM(fs.OrderQuantity) AS TotalOrderQuantity, SUM(fs.SalesAmount) AS TotalSalesAmount
+    SELECT dc.CustomerKey, SUM(fs.OrderQuantity) AS TotalOrderQuantity, fs.SalesAmount
     FROM dimcustomer dc
     LEFT JOIN factinternetsales fs ON dc.CustomerKey = fs.CustomerKey
     GROUP BY dc.CustomerKey;
@@ -50,7 +50,7 @@ conn.close()
 
 # Membuat DataFrame dari hasil query
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
-df_order = pd.DataFrame(data_order, columns=['TotalSalesAmount', 'TotalOrderQuantity'])
+df_order = pd.DataFrame(data_order, columns=['TotalOrderQuantity', 'SalesAmount'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
@@ -69,15 +69,14 @@ plt.grid(True)
 st.pyplot(plt)
 
 #2 Relationship 
-# st.subheader('2. Relationship (hubungan)')
-# st.dataframe(df_order)
-# plt.figure(figsize=(12, 6))
-# plt.scatter(df_order['TotalSalesAmount'], df_order['TotalOrderQuantity'], alpha=0.5)
-# plt.title('Relationship between Order Quantity and Sales Amount')
-# plt.xlabel('Order Quantity')
-# plt.ylabel('Sales Amount')
-# plt.grid(True)
+st.subheader('2. Relationship (hubungan)')
+st.dataframe(df_order)
+plt.figure(figsize=(12, 6))
+plt.scatter(df_order['TotalOrderQuantity'], df_order['SalesAmount'], alpha=0.5)
+plt.title('Relationship between Order Quantity and Sales Amount')
+plt.xlabel('Order Quantity')
+plt.ylabel('Sales Amount')
+plt.grid(True)
 
-# # Menampilkan plot di Streamlit
-# st.pyplot(plt)
-print(data_order)
+# Menampilkan plot di Streamlit
+st.pyplot(plt)
