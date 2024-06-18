@@ -69,14 +69,15 @@ plt.grid(True)
 st.pyplot(plt)
 
 #2 Relationship 
-st.subheader('2. Relationship (hubungan)')
-st.dataframe(df_order)
-plt.figure(figsize=(12, 6))
-plt.scatter(df_order['TotalSalesAmount'], df_order['TotalOrderQuantity'], alpha=0.5)
-plt.title('Relationship between Order Quantity and Sales Amount')
-plt.xlabel('Order Quantity')
-plt.ylabel('Sales Amount')
-plt.grid(True)
+# st.subheader('2. Relationship (hubungan)')
+# st.dataframe(df_order)
+# plt.figure(figsize=(12, 6))
+# plt.scatter(df_order['TotalSalesAmount'], df_order['TotalOrderQuantity'], alpha=0.5)
+# plt.title('Relationship between Order Quantity and Sales Amount')
+# plt.xlabel('Order Quantity')
+# plt.ylabel('Sales Amount')
+# plt.grid(True)
 
-# Menampilkan plot di Streamlit
-st.pyplot(plt)
+# # Menampilkan plot di Streamlit
+# st.pyplot(plt)
+print(data_order)
