@@ -47,35 +47,36 @@ data_order = cursor.fetchall()
 cursor.close()
 conn.close()
 
-# Membuat DataFrame dari hasil query
-df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
-df_order = pd.DataFrame(data_order, columns=['TotalSalesAmount', 'TotalOrderQuantity'])
+print(data_order)
+# # Membuat DataFrame dari hasil query
+# df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
+# df_order = pd.DataFrame(data_order, columns=['TotalSalesAmount', 'TotalOrderQuantity'])
 
-# Menampilkan judul dashboard
-st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
+# # Menampilkan judul dashboard
+# st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
 
-# 1. Comparison
-st.subheader('1. Comparison (perbandingan)')
-st.dataframe(df_customer)
-plt.figure(figsize=(12, 6))
-plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
-plt.title('Total Customer by Gender')
-plt.xlabel('Gender')
-plt.ylabel('Total Customer')
-plt.grid(True)
+# # 1. Comparison
+# st.subheader('1. Comparison (perbandingan)')
+# st.dataframe(df_customer)
+# plt.figure(figsize=(12, 6))
+# plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
+# plt.title('Total Customer by Gender')
+# plt.xlabel('Gender')
+# plt.ylabel('Total Customer')
+# plt.grid(True)
 
-# Menampilkan plot di Streamlit
-st.pyplot(plt)
+# # Menampilkan plot di Streamlit
+# st.pyplot(plt)
 
-#2 Relationship 
-st.subheader('2. Relationship (hubungan)')
-st.dataframe(df_order)
-plt.figure(figsize=(12, 6))
-plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], alpha=0.5)
-plt.title('Relationship between Order Quantity and Sales Amount')
-plt.xlabel('Total Order Quantity')
-plt.ylabel('Total Sales Amount')
-plt.grid(True)
+# #2 Relationship 
+# st.subheader('2. Relationship (hubungan)')
+# st.dataframe(df_order)
+# plt.figure(figsize=(12, 6))
+# plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], alpha=0.5)
+# plt.title('Relationship between Order Quantity and Sales Amount')
+# plt.xlabel('Total Order Quantity')
+# plt.ylabel('Total Sales Amount')
+# plt.grid(True)
 
-# Menampilkan plot di Streamlit
-st.pyplot(plt)
+# # Menampilkan plot di Streamlit
+# st.pyplot(plt)
