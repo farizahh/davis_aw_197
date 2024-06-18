@@ -13,52 +13,49 @@ conn = pymysql.connect(
     database="aw"
 )
 
+# Membuat cursor
+cursor = conn.cursor()
+
 # Cek koneksi berhasil
 if conn:
     print('Connected to MySQL database')
 
-# Mengambil data dari tabel users dan product_fact
-gender= "SELECT Gender, CustomerKey FROM dimcustomer"
-customer= "SELECT CustomerKey FROM factinternetsales"
+# Query SQL untuk mengambil data penjualan per tahun
+query = """
+    SELECT dc.Gender, COUNT(fs.CustomerKey) AS TotalCustomers
+    FROM dimcustomer dc
+    LEFT JOIN factinternetsales fs ON dc.CustomerKey = fs.CustomerKey
+    GROUP BY dc.Gender;
+"""
 
 # Eksekusi query
 cursor.execute(query)
+
+# Mendapatkan hasil query sebagai tuple
 data = cursor.fetchall()
 
 # Menutup cursor dan koneksi database
 cursor.close()
-connection.close()
+conn.close()
+
+# Membuat DataFrame dari hasil query
+df_customer = pd.DataFrame(data, columns=['Gender', 'TotalCustomers'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
 
-df_gender = pd.read_sql(gender, engine)
-df_customer = pd.read_sql(customer, engine)
+# Menampilkan DataFrame di Streamlit dalam bentuk tabel
+st.subheader('1. Comparison (perbandingan)')
+st.dataframe(df_customer)
 
-# Melakukan join tabel users dan product_fact berdasarkan UserID
-df_merged = pd.merge(df_customer, df_gender, on='CustomerKey')
-
-# Menutup koneksi setelah selesai digunakan
-conn.close()
-
-# Mengagregasi data penjualan per gender
-df_aggregated = df_merged.groupby('Gender').agg({
-    'CustomerKey': 'count'
-}).reset_index()
-
-# Menampilkan hasil agregasi untuk verifikasi
-st.write(df_aggregated)
-
-# Membuat bar chart untuk visualisasi
-st.bar_chart(df_aggregated.set_index('Gender'))
-
-# Menambahkan label dan judul
+# Plot perbandingan total penjualan per tahun dengan Matplotlib
+plt.figure(figsize=(12, 6))
+plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
+plt.title('Total Customer by Gender')
 plt.xlabel('Gender')
 plt.ylabel('Total Customer')
-plt.title('Total Customer by Gender')
-plt.xticks(rotation=0)
-plt.show()
+plt.grid(True)
 
 # Menampilkan plot di Streamlit
-st.markdown(f"<h2 style='text-align: center;'>Total Customer By Gender </h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: center;'>Grafik Total Customer </h2>", unsafe_allow_html=True)
 st.pyplot(plt)
