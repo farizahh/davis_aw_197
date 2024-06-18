@@ -67,7 +67,7 @@ def load_adventure_works_data():
     return df_customer, df_order, df_sales, df_total
 
 # Menampilkan judul di halaman web
-st.title("Dashboard Data")
+st.title("Final Project Data Visualisasi")
 
 # Menambahkan sidebar
 option = st.sidebar.selectbox(
