@@ -21,6 +21,17 @@ if conn:
 gender= "SELECT Gender, CustomerKey FROM dimcustomer"
 customer= "SELECT CustomerKey FROM factinternetsales"
 
+# Eksekusi query
+cursor.execute(query)
+data = cursor.fetchall()
+
+# Menutup cursor dan koneksi database
+cursor.close()
+connection.close()
+
+# Menampilkan judul dashboard
+st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
+
 df_gender = pd.read_sql(gender, engine)
 df_customer = pd.read_sql(customer, engine)
 
