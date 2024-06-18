@@ -35,6 +35,14 @@ query_order = """
     GROUP BY dc.CustomerKey;
 """
 
+# Query untuk mengambil data total penjualan per produk
+query_sales = """
+    SELECT p.EnglishProductName, SUM(s.SalesAmount) AS TotalSales
+    FROM factinternetsales s
+    INNER JOIN dimproduct p ON s.ProductKey = p.ProductKey
+    GROUP BY p.EnglishProductName
+"""
+
 # Eksekusi query untuk mengambil data pelanggan
 cursor.execute(query_cust)
 data_cust = cursor.fetchall()
@@ -43,6 +51,10 @@ data_cust = cursor.fetchall()
 cursor.execute(query_order)
 data_order = cursor.fetchall()
 
+# Eksekusi query untuk mengambil data total penjualan
+cursor.execute(query_sales)
+data_sales = cursor.fetchall()
+
 # Menutup cursor dan koneksi database
 cursor.close()
 conn.close()
@@ -50,6 +62,7 @@ conn.close()
 # Membuat DataFrame dari hasil query
 df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
 df_order = pd.DataFrame(data_order, columns=['CustomerKey', 'TotalOrderQuantity', 'TotalSalesAmount'])
+df_sales = pd.DataFrame(data_sales, columns=['EnglishProductName', 'TotalSales'])
 
 # Menampilkan judul dashboard
 st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
@@ -67,7 +80,7 @@ plt.grid(True)
 # Menampilkan plot di Streamlit
 st.pyplot(plt)
 
-#2 Relationship 
+# 2. Relationship 
 st.subheader('2. Relationship (hubungan)')
 st.dataframe(df_order)
 plt.figure(figsize=(12, 6))
@@ -76,6 +89,19 @@ plt.title('Relationship between Order Quantity, Sales Amount, and CustomerKey')
 plt.xlabel('Total Order Quantity')
 plt.ylabel('Total Sales Amount')
 plt.colorbar(label='CustomerKey')  # Menambahkan colorbar untuk menunjukkan keterangan warna
+plt.grid(True)
+
+# Menampilkan plot di Streamlit
+st.pyplot(plt)
+
+# 3. Composition (komposisi)
+st.subheader('3. Composition (komposisi)')
+st.dataframe(df_sales)
+plt.figure(figsize=(10, 6))
+plt.hist(df_sales['TotalSales'], bins=20, color='skyblue', edgecolor='black')
+plt.title('Distribution of Total Sales')
+plt.xlabel('Total Sales')
+plt.ylabel('Frequency')
 plt.grid(True)
 
 # Menampilkan plot di Streamlit
