@@ -71,10 +71,11 @@ st.pyplot(plt)
 st.subheader('2. Relationship (hubungan)')
 st.dataframe(df_order)
 plt.figure(figsize=(12, 6))
-plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], alpha=0.5)
-plt.title('Relationship between Order Quantity and Sales Amount')
+plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], c=df_order['CustomerKey'], cmap='viridis', alpha=0.5)
+plt.title('Relationship between Order Quantity, Sales Amount, and CustomerKey')
 plt.xlabel('Total Order Quantity')
 plt.ylabel('Total Sales Amount')
+plt.colorbar(label='CustomerKey')  # Menambahkan colorbar untuk menunjukkan keterangan warna
 plt.grid(True)
 
 # Menampilkan plot di Streamlit
