@@ -10,6 +10,23 @@ def load_imdb_data():
     df1 = pd.read_csv(fn1, encoding='latin1')
     return df1
 
+# Fungsi untuk membuat visualisasi
+def visualize_top_10(df):
+    # Ambil 10 baris pertama
+    top_10 = df.head(10)
+
+    # Ambil kolom yang relevan
+    judul_film = top_10['judul']
+    rating = top_10['rating']
+
+    # Buat visualisasi
+    plt.figure(figsize=(10, 8))
+    plt.barh(judul_film, rating, color='skyblue')
+    plt.title('Top 10 Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Judul Film')
+    st.pyplot(plt)
+    
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
     conn = pymysql.connect(
@@ -80,21 +97,13 @@ if option == 'IMDB Top Movies':
     df_imdb = load_imdb_data()
     st.title("Scraping Website IMDB")
 
-    # Ambil 10 baris pertama
-    top_10 = df_imdb.head(10)
-    st.dataframe(top_10)
+    # Tampilkan tabel aslinya
+    st.subheader("Tabel Data IMDB")
+    st.dataframe(df_imdb)
 
-    # Ambil kolom yang relevan
-    judul_film = top_10['judul']
-    umur = top_10['umur']
-    
-    # Buat visualisasi
-    plt.figure(figsize=(10, 8))
-    plt.barh(judul_film.iloc[umur.index], umur, color='skyblue')
-    plt.title('Rating Film di IMDB')
-    plt.xlabel('Umur')
-    plt.ylabel('Judul Film')
-    st.pyplot(plt)
+    # Buat visualisasi untuk 10 baris teratas
+    st.subheader("Visualisasi Top 10 Rating Film di IMDB")
+    visualize_top_10(df_imdb)
 
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
