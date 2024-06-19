@@ -111,7 +111,7 @@ else:
     
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
-    st.write("Visualisasi ini digunakan untuk melihat perbandingan gender yang ada dari total customer, dalam arti lain visualisasi ini membantu untuk mencari tahu berapa jumlah customer wanita, dan berapa jumlah customer dari pria. Dataset yang digunakan diambil dari tabel dimcustomer dari kolom Gender dan CustomerKey, serta tabel factinternetsales yang mengambil kolom CustomerKey, berikut hasil dari visualisasi nya:")
+    st.write("Visualisasi ini digunakan untuk melihat perbandingan gender yang ada dari total customer, dalam arti lain visualisasi ini membantu untuk mencari tahu berapa jumlah customer wanita, dan berapa jumlah customer dari pria.")
     st.dataframe(df_customer)
     plt.figure(figsize=(12, 6))
     plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
@@ -123,6 +123,7 @@ else:
 
     # 2. Relationship 
     st.subheader('2. Relationship (hubungan)')
+    st.write("Visualisasi ini digunakan untuk melihat hubungan antara jumlah pembelian customer dengan harga suatu produk.")
     st.dataframe(df_order)
     plt.figure(figsize=(12, 6))
     plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], c=df_order['CustomerKey'], cmap='viridis', alpha=0.5)
