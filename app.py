@@ -111,6 +111,7 @@ else:
     
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
+    st.write("Teks kecil atau keterangan tambahan dapat ditambahkan di sini.")
     st.dataframe(df_customer)
     plt.figure(figsize=(12, 6))
     plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
@@ -122,6 +123,7 @@ else:
 
     # 2. Relationship 
     st.subheader('2. Relationship (hubungan)')
+    st.markdown("Teks kecil atau keterangan tambahan dapat ditambahkan di sini.")
     st.dataframe(df_order)
     plt.figure(figsize=(12, 6))
     plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], c=df_order['CustomerKey'], cmap='viridis', alpha=0.5)
