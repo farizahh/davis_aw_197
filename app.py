@@ -9,6 +9,21 @@ def load_imdb_data():
     fn1 = 'imdb_top.csv'
     df1 = pd.read_csv(fn1, encoding='latin1')
     return df1
+    
+    # Load data menggunakan fungsi
+    df1 = load_imdb_data()
+    
+    # Ambil kolom yang relevan
+    judul_film = df1['judul']
+    rating = df1['rating']
+    
+    # Buat visualisasi
+    plt.figure(figsize=(10, 8))
+    plt.barh(judul_film, rating, color='skyblue')
+    plt.title('Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Judul Film')
+    st.pyplot(plt)
 
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
