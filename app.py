@@ -79,11 +79,14 @@ option = st.sidebar.selectbox(
 if option == 'IMDB Top Movies':
     df_imdb = load_imdb_data()
     st.title("Scraping Website IMDB")
-    st.dataframe(df_imdb)
+
+    # Ambil 10 baris pertama
+    top_10 = df_imdb.head(10)
+    st.dataframe(top_10)
 
     # Ambil kolom yang relevan
-    judul_film = df_imdb['judul']
-    umur = df_imdb['umur']
+    judul_film = top_10['judul']
+    umur = top_10['umur']
     
     # Buat visualisasi
     plt.figure(figsize=(10, 8))
