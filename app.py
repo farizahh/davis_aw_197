@@ -82,8 +82,8 @@ if option == 'IMDB Top Movies':
     st.dataframe(df_imdb)
     
     # Ambil kolom yang relevan
-    judul_film = df_imdb['judul']  # Ganti dengan nama kolom yang sesuai
-    rating = df_imdb['rating']     # Ganti dengan nama kolom yang sesuai
+    judul_film = df_imdb['judul']
+    rating = df_imdb['rating']
     
     # Buat visualisasi
     plt.figure(figsize=(10, 8))
@@ -91,7 +91,6 @@ if option == 'IMDB Top Movies':
     plt.title('Rating Film di IMDB')
     plt.xlabel('Rating')
     plt.ylabel('Judul Film')
-    plt.gca().invert_yaxis()  # Membalikkan urutan y-axis untuk menampilkan judul dari atas ke bawah
     st.pyplot(plt)
 
 else:
