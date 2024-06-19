@@ -9,6 +9,21 @@ def load_imdb_data():
     fn1 = 'imdb_top.csv'
     df1 = pd.read_csv(fn1, encoding='latin1')
     return df1
+    
+    # Load data menggunakan fungsi
+    df1 = load_imdb_data()
+    
+    # Ambil kolom yang relevan
+    judul_film = df1['judul']
+    rating = df1['rating']
+    
+    # Buat visualisasi
+    plt.figure(figsize=(10, 8))
+    plt.barh(judul_film, rating, color='skyblue')
+    plt.title('Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Judul Film')
+    st.pyplot(plt)
 
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
@@ -62,7 +77,7 @@ def load_adventure_works_data():
     df_customer = pd.DataFrame(data_cust, columns=['Gender', 'TotalCustomers'])
     df_order = pd.DataFrame(data_order, columns=['CustomerKey', 'TotalOrderQuantity', 'TotalSalesAmount'])
     df_sales = pd.DataFrame(data_sales, columns=['EnglishProductName', 'TotalSales'])
-    df_total = pd.DataFrame(data_total, columns=['SalesAmount'])
+    df_total = pd.DataFrame(data_total, columns =['SalesAmount'])
 
     return df_customer, df_order, df_sales, df_total
 
@@ -80,20 +95,6 @@ if option == 'IMDB Top Movies':
     df_imdb = load_imdb_data()
     st.title("Scraping Website IMDB")
     st.dataframe(df_imdb)
-    
-    # Ambil kolom yang relevan
-    judul_film = df_imdb['judul'].astype(str)  # Pastikan semua judul adalah string
-    rating = df_imdb['rating'].astype(float)   # Pastikan semua rating adalah float
-    
-    # Buat visualisasi
-    plt.figure(figsize=(10, 8))
-    plt.barh(judul_film, rating, color='skyblue')
-    plt.title('Rating Film di IMDB')
-    plt.xlabel('Rating')
-    plt.ylabel('Judul Film')
-    plt.gca().invert_yaxis()  # Membalikkan urutan y-axis untuk menampilkan judul dari atas ke bawah
-    st.pyplot(plt)
-
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
