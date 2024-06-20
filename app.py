@@ -95,7 +95,7 @@ option = st.sidebar.selectbox(
 # Menampilkan data sesuai pilihan di sidebar
 if option == 'IMDB Top Movies':
     df_imdb = load_imdb_data()
-    st.title("Scraping Website IMDB")
+    st.markdown("<h2 style='text-align: center;'>Scraping Website IMDB IMDB</h2>", unsafe_allow_html=True)
 
     # Tampilkan tabel aslinya
     st.subheader("Tabel Data IMDB")
@@ -138,7 +138,7 @@ if option == 'IMDB Top Movies':
 
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
-    st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Dashboard Adventure Works</h2>", unsafe_allow_html=True)
     
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
@@ -167,7 +167,7 @@ else:
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
-    st.write("Visualisasi di bawah ini menunjukkan distribusi total penjualan. Histogram ini memperlihatkan bagaimana penjualan total tersebar di dataset.")
+    st.write("Visualisasi ini menunjukkan hasil komposisi total penjualan. Histogram ini memperlihatkan bagaimana penjualan total tersebar di dataset.")
     st.dataframe(df_sales)
     plt.figure(figsize=(10, 6))
     plt.hist(df_sales['TotalSales'], bins=20, color='skyblue', edgecolor='black')
@@ -179,7 +179,7 @@ else:
 
     # 4. Distribution (distribusi)
     st.subheader('4. Distribution (distribusi)')
-    st.write("Visualisasi di bawah ini menunjukkan estimasi kepadatan kernel (KDE) dari jumlah penjualan. Grafik ini memberikan gambaran lebih halus tentang distribusi jumlah penjualan.")
+    st.write("Visualisasi ini menunjukkan hasil distribusi estimasi kepadatan kernel (KDE) dari jumlah penjualan. Grafik ini memberikan gambaran lebih halus tentang distribusi jumlah penjualan.")
     st.dataframe(df_total)
     plt.figure(figsize=(10, 6))
     sns.kdeplot(df_total['SalesAmount'], color='skyblue', fill=True)
