@@ -102,7 +102,7 @@ if option == 'IMDB Top Movies':
     st.write("Berikut merupakan hasil dari scraping yang diambil dari website IMDB, hasil dari scraping tersebut mengambil elemen judul film, rating film, tahun tayang film, durasi film, dan kualifikasi umur penonton film.")
     st.dataframe(df_imdb)
 
-    st.subheader("Hasil visualisasi data IMDB")
+    st.markdown("<h2 style='text-align: center;'>Hasil visualisasi data IMDB</h2>", unsafe_allow_html=True)
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
     st.write("Visualisasi di bawah ini mengambil data judul film dan ratingnya yang menunjukkan hasil dari rating film yang diambil dipilih hanya 10 kolom teratas. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
