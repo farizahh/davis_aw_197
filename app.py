@@ -9,6 +9,23 @@ def load_imdb_data():
     fn1 = 'imdb_top.csv'
     df1 = pd.read_csv(fn1, encoding='latin1')
     return df1
+
+# Fungsi untuk membuat visualisasi
+def visualize_top_10(df):
+    # Ambil 10 baris pertama
+    top_10 = df.head(10)
+
+    # Ambil kolom yang relevan
+    judul_film = top_10['judul']
+    rating = top_10['rating']
+
+    # Buat visualisasi
+    plt.figure(figsize=(10, 8))
+    plt.barh(judul_film, rating, color='skyblue')
+    plt.title('Top 10 Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Judul Film')
+    st.pyplot(plt)
     
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
@@ -77,27 +94,31 @@ option = st.sidebar.selectbox(
 
 # Menampilkan data sesuai pilihan di sidebar
 if option == 'IMDB Top Movies':
-    df1 = load_imdb_data()
+    df_imdb = load_imdb_data()
     st.title("Scraping Website IMDB")
 
     # Tampilkan tabel aslinya
     st.subheader("Tabel Data IMDB")
     st.dataframe(df_imdb)
 
-    # 1. Comparison
-    st.subheader('1. Comparison (perbandingan)')
-    st.dataframe(df1)
-    
-    plt.figure(figsize=(10, 8))
-    sns.boxplot(x='tahun', y='rating', data=df1)
-    plt.title('Rating per Tahun di IMDB')
-    plt.xlabel('Tahun')
-    plt.ylabel('Rating')
-    st.pyplot(plt)
-    
+    # Buat visualisasi untuk 10 baris teratas
+    st.subheader("Visualisasi Top 10 Rating Film di IMDB")
+    visualize_top_10(df_imdb)
+
+# 1. Comparison
+st.subheader('1. Comparison (perbandingan)')
+st.dataframe(df_imdb)
+
+plt.figure(figsize=(10, 8))
+sns.boxplot(x='tahun', y='rating', data=df_imdb)
+plt.title('Rating per Tahun di IMDB')
+plt.xlabel('Tahun')
+plt.ylabel('Rating')
+st.pyplot(plt)
+
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
-    st.title("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
     
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
