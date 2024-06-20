@@ -107,7 +107,7 @@ if option == 'IMDB Top Movies':
 
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
-    st.write("Visualisasi di bawah ini menunjukkan distribusi rating film per tahun. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
+    st.write("Visualisasi di bawah ini menunjukkan distribusi rating film yang diambil dari 10 kolom teratas. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
     visualize_top_10(df_imdb)
 
     # 2. Relationship 
