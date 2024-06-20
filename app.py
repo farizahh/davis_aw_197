@@ -107,6 +107,7 @@ if option == 'IMDB Top Movies':
 
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
+    st.write("Grafik di bawah ini menunjukkan distribusi rating film per tahun. Anda dapat melihat bagaimana rating film bervariasi dari tahun ke tahun.")
     plt.figure(figsize=(10, 8))
     sns.boxplot(x='tahun', y='rating', data=df_imdb)
     plt.title('Rating per Tahun di IMDB')
@@ -116,6 +117,7 @@ if option == 'IMDB Top Movies':
 
     # 2. Relationship 
     st.subheader('2. Relationship (hubungan)')
+    st.write("Grafik di bawah ini menunjukkan hubungan antara durasi film dan rating di IMDB. Warna pada titik-titik menunjukkan tahun rilis film. Anda dapat melihat apakah ada tren tertentu antara durasi film dan rating yang diberikan.")
     plt.figure(figsize=(10, 8))
     sns.scatterplot(x='durasi', y='rating', hue='tahun', data=df_imdb)
     plt.title('Relationship antara Durasi dan Rating di IMDB')
@@ -125,6 +127,7 @@ if option == 'IMDB Top Movies':
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
+    st.write("Grafik di bawah ini menunjukkan komposisi umur penonton berdasarkan data dari IMDB. Anda dapat melihat persentase setiap kelompok umur yang telah menonton film-film ini.")
     plt.figure(figsize=(10, 8))
     df_imdb['umur'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=sns.color_palette('pastel'))
     plt.title('Komposisi Umur Penonton di IMDB')
@@ -132,6 +135,7 @@ if option == 'IMDB Top Movies':
 
     # 4. Distribution (distribusi)
     st.subheader('4. Distribution (distribusi)')
+    st.write("Grafik di bawah ini menunjukkan distribusi rating film di IMDB. Histogram ini memperlihatkan bagaimana rating film tersebar dan juga menampilkan kurva kepadatan kernel (KDE) untuk memberikan gambaran lebih halus tentang distribusi rating.")
     plt.figure(figsize=(10, 8))
     sns.histplot(df_imdb['rating'], kde=True, bins=20)
     plt.title('Distribusi Rating Film di IMDB')
@@ -170,6 +174,7 @@ else:
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
+    st.write("Grafik di bawah ini menunjukkan distribusi total penjualan. Histogram ini memperlihatkan bagaimana penjualan total tersebar di dataset.")
     st.dataframe(df_sales)
     plt.figure(figsize=(10, 6))
     plt.hist(df_sales['TotalSales'], bins=20, color='skyblue', edgecolor='black')
@@ -181,6 +186,7 @@ else:
 
     # 4. Distribution (distribusi)
     st.subheader('4. Distribution (distribusi)')
+    st.write("Grafik di bawah ini menunjukkan estimasi kepadatan kernel (KDE) dari jumlah penjualan. Grafik ini memberikan gambaran lebih halus tentang distribusi jumlah penjualan.")
     st.dataframe(df_total)
     plt.figure(figsize=(10, 6))
     sns.kdeplot(df_total['SalesAmount'], color='skyblue', fill=True)
