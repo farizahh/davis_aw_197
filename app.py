@@ -77,7 +77,7 @@ option = st.sidebar.selectbox(
 
 # Menampilkan data sesuai pilihan di sidebar
 if option == 'IMDB Top Movies':
-    df_imdb = load_imdb_data()
+    df1 = load_imdb_data()
     st.title("Scraping Website IMDB")
 
     # Tampilkan tabel aslinya
@@ -87,13 +87,14 @@ if option == 'IMDB Top Movies':
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
     st.dataframe(df1)
+    
     plt.figure(figsize=(10, 8))
     sns.boxplot(x='tahun', y='rating', data=df1)
     plt.title('Rating per Tahun di IMDB')
     plt.xlabel('Tahun')
     plt.ylabel('Rating')
     st.pyplot(plt)
-
+    
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.title("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
