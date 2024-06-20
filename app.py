@@ -126,10 +126,10 @@ if option == 'IMDB Top Movies':
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
-    st.write("Visualisasi di bawah ini menunjukkan komposisi umur penonton berdasarkan data dari IMDB. Dapat di lihat persentase setiap kelompok umur yang telah menonton film-film ini.")
+    st.write("Visualisasi di bawah ini menunjukkan komposisi klasifikasi usia penonton untuk film berdasarkan data dari IMDB. Dapat di lihat persentase setiap kelompok umur yang telah menonton film-film ini.")
     plt.figure(figsize=(10, 8))
     df_imdb['umur'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=sns.color_palette('pastel'))
-    plt.title('Komposisi Umur Penonton di IMDB')
+    plt.title('Komposisi usia penonton untuk film di IMDB')
     st.pyplot(plt)
 
     # 4. Distribution (distribusi)
