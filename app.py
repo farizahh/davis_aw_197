@@ -139,7 +139,7 @@ if option == 'IMDB Top Movies':
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h2 style='text-align: center;'>Dashboard Adventure Works</h2>", unsafe_allow_html=True)
-    
+
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
     st.write("Visualisasi ini digunakan untuk melihat perbandingan gender yang ada dari total customer, dalam arti lain visualisasi ini membantu untuk mencari tahu berapa jumlah customer wanita, dan berapa jumlah customer dari pria.")
