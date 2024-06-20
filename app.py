@@ -105,16 +105,15 @@ if option == 'IMDB Top Movies':
     st.subheader("Visualisasi Top 10 Rating Film di IMDB")
     visualize_top_10(df_imdb)
 
-# 1. Comparison
-st.subheader('1. Comparison (perbandingan)')
-st.dataframe(df_imdb)
-
-plt.figure(figsize=(10, 8))
-sns.boxplot(x='tahun', y='rating', data=df_imdb)
-plt.title('Rating per Tahun di IMDB')
-plt.xlabel('Tahun')
-plt.ylabel('Rating')
-st.pyplot(plt)
+    # 1. Comparison
+    st.subheader('1. Comparison (perbandingan)')
+    st.dataframe(df_imdb)
+    plt.figure(figsize=(10, 8))
+    sns.boxplot(x='tahun', y='rating', data=df_imdb)
+    plt.title('Rating per Tahun di IMDB')
+    plt.xlabel('Tahun')
+    plt.ylabel('Rating')
+    st.pyplot(plt)
 
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
