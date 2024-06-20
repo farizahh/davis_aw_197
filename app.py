@@ -123,6 +123,22 @@ if option == 'IMDB Top Movies':
     plt.ylabel('Rating')
     st.pyplot(plt)
 
+    # 3. Composition (komposisi)
+    st.subheader('3. Composition (komposisi)')
+    plt.figure(figsize=(10, 8))
+    df['umur'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=sns.color_palette('pastel'))
+    plt.title('Komposisi Umur Penonton di IMDB')
+    st.pyplot(plt)
+
+    # 4. Distribution (distribusi)
+    st.subheader('4. Distribution (distribusi)')
+    plt.figure(figsize=(10, 8))
+    sns.histplot(df['rating'], kde=True, bins=20)
+    plt.title('Distribusi Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Frekuensi')
+    st.pyplot(plt)
+
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
