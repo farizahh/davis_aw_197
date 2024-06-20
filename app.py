@@ -95,6 +95,10 @@ option = st.sidebar.selectbox(
 # Menampilkan data sesuai pilihan di sidebar
 if option == 'IMDB Top Movies':
     df_imdb = load_imdb_data()
+    
+    # Konversi kolom 'tahun' menjadi numerik
+    df_imdb['tahun'] = pd.to_numeric(df_imdb['tahun'], errors='coerce')
+    
     st.title("Scraping Website IMDB")
 
     # Tampilkan tabel aslinya
@@ -110,7 +114,7 @@ if option == 'IMDB Top Movies':
     st.write("Visualisasi di bawah ini menunjukkan distribusi rating film per tahun. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
     plt.figure(figsize=(10, 8))
     average_rating_per_year = df_imdb.groupby('tahun')['rating'].mean().reset_index()
-    sns.lineplot(x='tahun', y='rating', data=average_rating_per_year, marker='o')
+    sns.lineplot(x='tahun', y='rating', data=average_rating_per_year.dropna(), marker='o')  # Drop NaN values
     plt.title('Rata-rata Rating per Tahun di IMDB')
     plt.xlabel('Tahun')
     plt.ylabel('Rata-rata Rating')
