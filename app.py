@@ -10,54 +10,23 @@ def load_imdb_data():
     df1 = pd.read_csv(fn1, encoding='latin1')
     return df1
 
-# Fungsi untuk membuat visualisasi Top 10 untuk IMDB
+# Fungsi untuk membuat visualisasi
 def visualize_top_10(df):
+    # Ambil 10 baris pertama
     top_10 = df.head(10)
+
+    # Ambil kolom yang relevan
     judul_film = top_10['judul']
     rating = top_10['rating']
 
+    # Buat visualisasi
     plt.figure(figsize=(10, 8))
     plt.barh(judul_film, rating, color='skyblue')
     plt.title('Top 10 Rating Film di IMDB')
     plt.xlabel('Rating')
     plt.ylabel('Judul Film')
     st.pyplot(plt)
-
-# Fungsi untuk visualisasi comparison IMDB
-def imdb_comparison(df):
-    plt.figure(figsize=(10, 8))
-    sns.boxplot(x='tahun', y='rating', data=df)
-    plt.title('Rating per Tahun di IMDB')
-    plt.xlabel('Tahun')
-    plt.ylabel('Rating')
-    st.pyplot(plt)
-
-# Fungsi untuk visualisasi relationship IMDB
-def imdb_relationship(df):
-    plt.figure(figsize=(10, 8))
-    sns.scatterplot(x='durasi', y='rating', hue='tahun', data=df)
-    plt.title('Relationship antara Durasi dan Rating di IMDB')
-    plt.xlabel('Durasi (menit)')
-    plt.ylabel('Rating')
-    st.pyplot(plt)
-
-# Fungsi untuk visualisasi composition IMDB
-def imdb_composition(df):
-    plt.figure(figsize=(10, 8))
-    df['umur_penonton'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=sns.color_palette('pastel'))
-    plt.title('Komposisi Umur Penonton di IMDB')
-    plt.ylabel('')
-    st.pyplot(plt)
-
-# Fungsi untuk visualisasi distribution IMDB
-def imdb_distribution(df):
-    plt.figure(figsize=(10, 8))
-    sns.histplot(df['rating'], kde=True, bins=20)
-    plt.title('Distribusi Rating Film di IMDB')
-    plt.xlabel('Rating')
-    plt.ylabel('Frekuensi')
-    st.pyplot(plt)
-
+    
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
     conn = pymysql.connect(
@@ -114,47 +83,6 @@ def load_adventure_works_data():
 
     return df_customer, df_order, df_sales, df_total
 
-# Fungsi untuk visualisasi comparison Adventure Works
-def adventure_comparison(df_customer):
-    plt.figure(figsize=(12, 6))
-    plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
-    plt.title('Total Customer by Gender')
-    plt.xlabel('Gender')
-    plt.ylabel('Total Customer')
-    plt.grid(True)
-    st.pyplot(plt)
-
-# Fungsi untuk visualisasi relationship Adventure Works
-def adventure_relationship(df_order):
-    plt.figure(figsize=(12, 6))
-    plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], c=df_order['CustomerKey'], cmap='viridis', alpha=0.5)
-    plt.title('Relationship between Order Quantity, Sales Amount, and CustomerKey')
-    plt.xlabel('Total Order Quantity')
-    plt.ylabel('Total Sales Amount')
-    plt.colorbar(label='CustomerKey')
-    plt.grid(True)
-    st.pyplot(plt)
-
-# Fungsi untuk visualisasi composition Adventure Works
-def adventure_composition(df_sales):
-    plt.figure(figsize=(10, 6))
-    plt.hist(df_sales['TotalSales'], bins=20, color='skyblue', edgecolor='black')
-    plt.title('Distribution of Total Sales')
-    plt.xlabel('Total Sales')
-    plt.ylabel('Frequency')
-    plt.grid(True)
-    st.pyplot(plt)
-
-# Fungsi untuk visualisasi distribution Adventure Works
-def adventure_distribution(df_total):
-    plt.figure(figsize=(10, 6))
-    sns.kdeplot(df_total['SalesAmount'], color='skyblue', fill=True)
-    plt.title('Kernel Density Estimation of Sales Amount')
-    plt.xlabel('Sales Amount')
-    plt.ylabel('Density')
-    plt.grid(True)
-    st.pyplot(plt)
-
 # Menampilkan judul di halaman web
 st.title("Final Project Data Visualisasi")
 
@@ -177,41 +105,53 @@ if option == 'IMDB Top Movies':
     st.subheader("Visualisasi Top 10 Rating Film di IMDB")
     visualize_top_10(df_imdb)
 
-    # Buat visualisasi comparison, relationship, composition, distribution
-    st.subheader('Comparison Chart: Rating per Tahun')
-    imdb_comparison(df_imdb)
-
-    st.subheader('Relationship Chart: Durasi vs Rating')
-    imdb_relationship(df_imdb)
-
-    st.subheader('Composition Chart: Umur Penonton')
-    imdb_composition(df_imdb)
-
-    st.subheader('Distribution Chart: Distribusi Rating')
-    imdb_distribution(df_imdb)
-
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
-
+    
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
     st.write("Visualisasi ini digunakan untuk melihat perbandingan gender yang ada dari total customer, dalam arti lain visualisasi ini membantu untuk mencari tahu berapa jumlah customer wanita, dan berapa jumlah customer dari pria.")
     st.dataframe(df_customer)
-    adventure_comparison(df_customer)
+    plt.figure(figsize=(12, 6))
+    plt.bar(df_customer['Gender'], df_customer['TotalCustomers'], color=['blue', 'pink'], alpha=0.6)
+    plt.title('Total Customer by Gender')
+    plt.xlabel('Gender')
+    plt.ylabel('Total Customer')
+    plt.grid(True)
+    st.pyplot(plt)
 
     # 2. Relationship 
     st.subheader('2. Relationship (hubungan)')
     st.write("Visualisasi ini digunakan untuk melihat hubungan antara jumlah pembelian customer dengan harga suatu produk.")
     st.dataframe(df_order)
-    adventure_relationship(df_order)
+    plt.figure(figsize=(12, 6))
+    plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], c=df_order['CustomerKey'], cmap='viridis', alpha=0.5)
+    plt.title('Relationship between Order Quantity, Sales Amount, and CustomerKey')
+    plt.xlabel('Total Order Quantity')
+    plt.ylabel('Total Sales Amount')
+    plt.colorbar(label='CustomerKey')  # Menambahkan colorbar untuk menunjukkan keterangan warna
+    plt.grid(True)
+    st.pyplot(plt)
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
     st.dataframe(df_sales)
-    adventure_composition(df_sales)
+    plt.figure(figsize=(10, 6))
+    plt.hist(df_sales['TotalSales'], bins=20, color='skyblue', edgecolor='black')
+    plt.title('Distribution of Total Sales')
+    plt.xlabel('Total Sales')
+    plt.ylabel('Frequency')
+    plt.grid(True)
+    st.pyplot(plt)
 
     # 4. Distribution (distribusi)
     st.subheader('4. Distribution (distribusi)')
     st.dataframe(df_total)
-    adventure_distribution(df_total)
+    plt.figure(figsize=(10, 6))
+    sns.kdeplot(df_total['SalesAmount'], color='skyblue', fill=True)
+    plt.title('Kernel Density Estimation of Sales Amount')
+    plt.xlabel('Sales Amount')
+    plt.ylabel('Density')
+    plt.grid(True)
+    st.pyplot(plt)
