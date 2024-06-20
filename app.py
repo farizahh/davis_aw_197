@@ -108,10 +108,14 @@ if option == 'IMDB Top Movies':
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
     st.write("Visualisasi di bawah ini menunjukkan distribusi rating film per tahun. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
-    plt.bar(x='tahun', y='rating', data=df_imdb, color=['blue', 'pink'], alpha=0.6)
-    plt.title('Rating per Tahun di IMDB')
-    plt.xlabel('Tahun')
-    plt.ylabel('Rating')
+    top_10 = df.head(10)
+    judul_film = top_10['judul']
+    rating = top_10['rating']
+    plt.figure(figsize=(10, 8))
+    plt.barh(judul_film, rating, color='skyblue')
+    plt.title('Top 10 Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Judul Film')
     st.pyplot(plt)
 
     # 2. Relationship 
