@@ -107,7 +107,6 @@ if option == 'IMDB Top Movies':
 
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
-    st.dataframe(df_imdb)
     plt.figure(figsize=(10, 8))
     sns.boxplot(x='tahun', y='rating', data=df_imdb)
     plt.title('Rating per Tahun di IMDB')
