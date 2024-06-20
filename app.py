@@ -11,21 +11,21 @@ def load_imdb_data():
     return df1
 
 # Fungsi untuk membuat visualisasi
-def visualize_top_10(df):
-    # Ambil 10 baris pertama
-    top_10 = df.head(10)
+# def visualize_top_10(df):
+#     # Ambil 10 baris pertama
+#     top_10 = df.head(10)
 
-    # Ambil kolom yang relevan
-    judul_film = top_10['judul']
-    rating = top_10['rating']
+#     # Ambil kolom yang relevan
+#     judul_film = top_10['judul']
+#     rating = top_10['rating']
 
-    # Buat visualisasi
-    plt.figure(figsize=(10, 8))
-    plt.barh(judul_film, rating, color='skyblue')
-    plt.title('Top 10 Rating Film di IMDB')
-    plt.xlabel('Rating')
-    plt.ylabel('Judul Film')
-    st.pyplot(plt)
+#     # Buat visualisasi
+#     plt.figure(figsize=(10, 8))
+#     plt.barh(judul_film, rating, color='skyblue')
+#     plt.title('Top 10 Rating Film di IMDB')
+#     plt.xlabel('Rating')
+#     plt.ylabel('Judul Film')
+#     st.pyplot(plt)
     
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
@@ -101,9 +101,9 @@ if option == 'IMDB Top Movies':
     st.subheader("Tabel Data IMDB")
     st.dataframe(df_imdb)
 
-    # Buat visualisasi untuk 10 baris teratas
-    st.subheader("Visualisasi Top 10 Rating Film di IMDB")
-    visualize_top_10(df_imdb)
+    # # Buat visualisasi untuk 10 baris teratas
+    # st.subheader("Visualisasi Top 10 Rating Film di IMDB")
+    # visualize_top_10(df_imdb)
 
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
