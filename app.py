@@ -108,12 +108,10 @@ if option == 'IMDB Top Movies':
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
     st.write("Visualisasi di bawah ini menunjukkan distribusi rating film per tahun. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
-    plt.figure(figsize=(10, 8))
-    movies_per_year = df_imdb.groupby('tahun').size().reset_index(name='count')
-    sns.barplot(x='tahun', y='count', data=movies_per_year, palette='viridis')
-    plt.title('Jumlah Film yang Dirilis per Tahun di IMDB')
+    sns.boxplot(x='tahun', y='rating', data=df_imdb)
+    plt.title('Rating per Tahun di IMDB (Boxplot)')
     plt.xlabel('Tahun')
-    plt.ylabel('Jumlah Film')
+    plt.ylabel('Rating')
     st.pyplot(plt)
 
     # 2. Relationship 
