@@ -114,6 +114,15 @@ if option == 'IMDB Top Movies':
     plt.ylabel('Rating')
     st.pyplot(plt)
 
+    # 2. Relationship 
+    st.subheader('2. Relationship (hubungan)')
+    plt.figure(figsize=(10, 8))
+    sns.scatterplot(x='durasi', y='rating', hue='tahun', data=df_imdb)
+    plt.title('Relationship antara Durasi dan Rating di IMDB')
+    plt.xlabel('Durasi (menit)')
+    plt.ylabel('Rating')
+    st.pyplot(plt)
+
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h1 style='text-align: center; color: black;'>Dashboard Adventure Works</h1>", unsafe_allow_html=True)
