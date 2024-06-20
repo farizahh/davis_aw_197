@@ -99,6 +99,7 @@ if option == 'IMDB Top Movies':
 
     # Tampilkan tabel aslinya
     st.subheader("Tabel Data IMDB")
+    st.write("Berikut merupakan hasil dari scraping yang diambil dari website IMDB, hasil dari scraping tersebut mengambil elemen judul film, rating film, tahun tayang film, durasi film, dan kualifikasi umur penonton film.")
     st.dataframe(df_imdb)
 
     # # Buat visualisasi untuk 10 baris teratas
@@ -107,12 +108,12 @@ if option == 'IMDB Top Movies':
 
     # 1. Comparison
     st.subheader('1. Comparison (perbandingan)')
-    st.write("Visualisasi di bawah ini menunjukkan distribusi rating film yang diambil dari 10 kolom teratas. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
+    st.write("Visualisasi di bawah ini mengambil data judul film dan ratingnya yang menunjukkan hasil dari rating film yang diambil dipilih hanya 10 kolom teratas. Dapat di lihat bagaimana rating film bervariasi dari tahun ke tahun.")
     visualize_top_10(df_imdb)
 
     # 2. Relationship 
     st.subheader('2. Relationship (hubungan)')
-    st.write("Visualisasi di bawah ini menunjukkan hubungan antara durasi film dan rating di IMDB. Warna pada titik-titik menunjukkan tahun rilis film.")
+    st.write("Visualisasi tersebut mengambil data dari kolom durasi film, rating film dan tahun rilis film yang menunjukkan hasil hubungan antara durasi film dan rating di IMDB. Warna pada titik-titik menunjukkan tahun rilis film.")
     plt.figure(figsize=(10, 8))
     sns.scatterplot(x='durasi', y='rating', hue='tahun', data=df_imdb)
     plt.title('Relationship antara Durasi dan Rating di IMDB')
