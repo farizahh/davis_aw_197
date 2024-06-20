@@ -26,6 +26,41 @@ def visualize_top_10(df):
     plt.xlabel('Rating')
     plt.ylabel('Judul Film')
     st.pyplot(plt)
+
+# Fungsi untuk visualisasi comparison IMDB
+def imdb_comparison(df):
+    plt.figure(figsize=(10, 8))
+    sns.boxplot(x='tahun', y='rating', data=df)
+    plt.title('Rating per Tahun di IMDB')
+    plt.xlabel('Tahun')
+    plt.ylabel('Rating')
+    st.pyplot(plt)
+
+# Fungsi untuk visualisasi relationship IMDB
+def imdb_relationship(df):
+    plt.figure(figsize=(10, 8))
+    sns.scatterplot(x='durasi', y='rating', hue='tahun', data=df)
+    plt.title('Relationship antara Durasi dan Rating di IMDB')
+    plt.xlabel('Durasi (menit)')
+    plt.ylabel('Rating')
+    st.pyplot(plt)
+
+# Fungsi untuk visualisasi composition IMDB
+def imdb_composition(df):
+    plt.figure(figsize=(10, 8))
+    df['umur_penonton'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=sns.color_palette('pastel'))
+    plt.title('Komposisi Umur Penonton di IMDB')
+    plt.ylabel('')
+    st.pyplot(plt)
+
+# Fungsi untuk visualisasi distribution IMDB
+def imdb_distribution(df):
+    plt.figure(figsize=(10, 8))
+    sns.histplot(df['rating'], kde=True, bins=20)
+    plt.title('Distribusi Rating Film di IMDB')
+    plt.xlabel('Rating')
+    plt.ylabel('Frekuensi')
+    st.pyplot(plt)
     
 # Fungsi untuk mengambil data dari database MySQL
 def load_adventure_works_data():
@@ -94,7 +129,7 @@ option = st.sidebar.selectbox(
 
 # Menampilkan data sesuai pilihan di sidebar
 if option == 'IMDB Top Movies':
-    df_imdb = load_imdb_data()
+     df_imdb = load_imdb_data()
     st.title("Scraping Website IMDB")
 
     # Tampilkan tabel aslinya
@@ -104,6 +139,19 @@ if option == 'IMDB Top Movies':
     # Buat visualisasi untuk 10 baris teratas
     st.subheader("Visualisasi Top 10 Rating Film di IMDB")
     visualize_top_10(df_imdb)
+
+    # Buat visualisasi comparison, relationship, composition, distribution
+    st.subheader('Comparison Chart: Rating per Tahun')
+    imdb_comparison(df_imdb)
+
+    st.subheader('Relationship Chart: Durasi vs Rating')
+    imdb_relationship(df_imdb)
+
+    st.subheader('Composition Chart: Umur Penonton')
+    imdb_composition(df_imdb)
+
+    st.subheader('Distribution Chart: Distribusi Rating')
+    imdb_distribution(df_imdb)
 
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
