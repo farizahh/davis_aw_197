@@ -189,4 +189,4 @@ else:
     plt.grid(True)
     st.pyplot(plt)
 
-    st.markdown("<p style='font-size: small; text-align: center; margin-top: 10px;'>© Farizah Farhana 21082010197</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: small; text-align: center; margin-top: 30px;'>© Farizah Farhana 21082010197</p>", unsafe_allow_html=True)
