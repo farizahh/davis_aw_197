@@ -136,6 +136,9 @@ if option == 'IMDB Top Movies':
     plt.ylabel('Frekuensi')
     st.pyplot(plt)
 
+    st.write("Nama : Farizah Farhana")
+    st.write("NPM : 21082010197")
+
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h2 style='text-align: center;'>Dashboard Adventure Works</h2>", unsafe_allow_html=True)
@@ -188,3 +191,6 @@ else:
     plt.ylabel('Density')
     plt.grid(True)
     st.pyplot(plt)
+
+    st.write("Nama : Farizah Farhana")
+    st.write("NPM : 21082010197")
