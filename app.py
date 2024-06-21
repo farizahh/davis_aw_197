@@ -136,8 +136,6 @@ if option == 'IMDB Top Movies':
     plt.ylabel('Frekuensi')
     st.pyplot(plt)
 
-   st.markdown("<p style='text-align: center;'>© Farizah Farhana 21082010197</p>", unsafe_allow_html=True)
-
 else:
     df_customer, df_order, df_sales, df_total = load_adventure_works_data()
     st.markdown("<h2 style='text-align: center;'>Dashboard Adventure Works</h2>", unsafe_allow_html=True)
