@@ -120,7 +120,7 @@ if option == 'IMDB Top Movies':
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
-    st.write("Visualisasi di bawah ini menunjukkan komposisi klasifikasi usia penonton untuk film berdasarkan data dari IMDB. Dapat di lihat persentase setiap kelompok umur yang telah menonton film-film ini.")
+    st.write("Visualisasi di bawah ini mengambil dataset kolom umur yang menjadi klasifikasi batas usia penonton film. Hasil tersebut menunjukkan komposisi klasifikasi usia penonton untuk film berdasarkan data dari IMDB. Dapat di lihat persentase yang terbagi dalam 8 kelompok umur yang telah menonton film-film ini, termasuk dengan film yang tidak memiliki batas usia penonton nya juga terhitung.")
     plt.figure(figsize=(10, 8))
     df_imdb['umur'].value_counts().plot(kind='pie', autopct='%1.1f%%', colors=sns.color_palette('pastel'))
     plt.title('Komposisi usia penonton untuk film di IMDB')
@@ -128,7 +128,7 @@ if option == 'IMDB Top Movies':
 
     # 4. Distribution (distribusi)
     st.subheader('4. Distribution (distribusi)')
-    st.write("Visualisasi di bawah ini menunjukkan distribusi rating film di IMDB. Histogram ini memperlihatkan bagaimana rating film tersebar dan juga menampilkan kurva kepadatan kernel (KDE) untuk memberikan gambaran lebih halus tentang distribusi rating.")
+    st.write("Visualisasi di bawah ini menunjukkan distribusi rating film di IMDB yang diambil dari dataset kolom rating. Histogram ini memperlihatkan bagaimana rating film tersebar dan juga menampilkan kurva kepadatan kernel (KDE) untuk memberikan gambaran lebih halus tentang distribusi rating.")
     plt.figure(figsize=(10, 8))
     sns.histplot(df_imdb['rating'], kde=True, bins=20)
     plt.title('Distribusi Rating Film di IMDB')
@@ -157,7 +157,7 @@ else:
 
     # 2. Relationship 
     st.subheader('2. Relationship (hubungan)')
-    st.write("Visualisasi ini digunakan untuk melihat hubungan antara jumlah pembelian customer dengan harga suatu produk.")
+    st.write("Visualisasi ini digunakan untuk melihat hubungan antara jumlah pembelian customer dengan harga suatu produk. yang mengambil dataset kolom Quantity dengan SalesAmount dari tabel dimcustomer dengan factinternetsales")
     st.dataframe(df_order)
     plt.figure(figsize=(12, 6))
     plt.scatter(df_order['TotalOrderQuantity'], df_order['TotalSalesAmount'], c=df_order['CustomerKey'], cmap='viridis', alpha=0.5)
@@ -170,7 +170,7 @@ else:
 
     # 3. Composition (komposisi)
     st.subheader('3. Composition (komposisi)')
-    st.write("Visualisasi ini menunjukkan hasil komposisi total penjualan. Histogram ini memperlihatkan bagaimana penjualan total tersebar di dataset.")
+    st.write("Visualisasi ini menunjukkan hasil komposisi total penjualan. Histogram ini memperlihatkan bagaimana penjualan total tersebar di dataset yang merupakan penggabungan dari kolom tabel factinternetsales dengan dimproduct")
     st.dataframe(df_sales)
     plt.figure(figsize=(10, 6))
     plt.hist(df_sales['TotalSales'], bins=20, color='skyblue', edgecolor='black')
